@@ -44,7 +44,7 @@
 			justify-content: center;
 			align-items: center;
 			image {
-				width: 25rpx;
+				width: 20rpx;
 				height: 50%;
 				padding-right: 8rpx;
 			}

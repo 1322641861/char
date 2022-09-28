@@ -23,6 +23,7 @@
 	import chatContent from "@/components/chat-content.vue";
 	import customPopup from "@/components/custom-popup/custom-popup.vue";
 	import utils from "@/utils/utils.js";
+	import uniPopup from "@/components/uni-popup/components/uni-popup/uni-popup.vue"
 	
 	export default {
 		name:"private-room",
@@ -46,6 +47,7 @@
 			inputMsg,
 			chatContent,
 			customPopup,
+			uniPopup,
 		},
 		data() {
 			return {

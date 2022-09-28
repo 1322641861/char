@@ -27,6 +27,7 @@
 </template>
 
 <script>
+	import uniPopup from "@/components/uni-popup/components/uni-popup/uni-popup.vue"
 	export default {
 		data() {
 			return {
@@ -35,6 +36,9 @@
 				avatarIndex: 0,
 				nameTip: '',
 			}
+		},
+		components: {
+			uniPopup
 		},
 		onLoad() {
 			this.avatarImgList = new Array(11).fill(0).map((x, y) => {return x = `/static/${y + 1}.jpg`});
