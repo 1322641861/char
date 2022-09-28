@@ -7,9 +7,9 @@
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
-		/* 忽略app启动时的Hbuilder与sdk的版本冲突提示 */
-        "compatible": {
-            "ignoreVersion": true
+        /* 忽略app启动时的Hbuilder与sdk的版本冲突提示 */
+        "compatible" : {
+            "ignoreVersion" : true
         },
         "usingComponents" : true,
         "nvueStyleCompiler" : "uni-app",
@@ -20,10 +20,10 @@
             "autoclose" : true,
             "delay" : 0
         },
-		/* 顶部状态栏 */
-		"statusbar": {
-			"immersed": false
-		},
+        /* 顶部状态栏 */
+        "statusbar" : {
+            "immersed" : false
+        },
         /* 模块配置 */
         "modules" : {},
         /* 应用发布信息 */
@@ -60,7 +60,8 @@
             "splashscreen" : {
                 "androidStyle" : "default",
                 "android" : {
-                    "xhdpi" : ""
+                    "xhdpi" : "C:/Users/HP/Downloads/splash.9/res/drawable-mdpi/splash.9.png",
+                    "xxhdpi" : "C:/Users/HP/Downloads/splash.9/res/drawable-hdpi/splash.9.png"
                 }
             }
         }

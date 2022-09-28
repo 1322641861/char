@@ -42,19 +42,19 @@
 				this.msgModel = '';
 			},
 			getEnterHeight() {
-				const wrap = uni.createSelectorQuery().select(".enter-content");
-				wrap.boundingClientRect((res) => {
-					this.enterHeight = res.height * 2 + 'rpx';
-					this.$emit('putEnterHeight', this.enterHeight);
-				}).exec()
+				this.getEnterHeight()
 			},
 			inputName: utils.debounce(function() {
-				const wrap = uni.createSelectorQuery().select(".enter-content");
+				this.getEnterHeight()
+			}),
+			getEnterHeight() {
+				let wrap = uni.createSelectorQuery().select(".enter-content");
 				wrap.boundingClientRect((res) => {
 					this.enterHeight = res.height * 2 + 'rpx';
 					this.$emit('putEnterHeight', this.enterHeight);
 				}).exec()
-			}),
+				wrap = null;
+			},
 			blurFn(e) {
 				this.getEnterHeight();
 			},
@@ -67,8 +67,7 @@
 		position: fixed;
 		width: 100%;
 		bottom: 0;
-		// height: 90rpx;
-		padding: 12rpx;
+		padding: 16rpx 12rpx;
 		display: flex;
 		justify-content: space-between;
 		background-color: $uni-bg-color-grey;

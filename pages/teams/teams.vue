@@ -1,5 +1,6 @@
 <template>
 	<view class="teams">
+		<view class="status-bar"><!-- 这里是状态栏 --></view>
 		<view class="top-nav">
 			<nav-bar>
 				<scroll-view class="teams-list" scroll-x="true" show-scrollbar="false">
@@ -173,7 +174,10 @@
 
 <style lang="scss">
 	@import "@/uni.scss";
-
+	.status-bar {
+        height: var(--status-bar-height);
+        width: 100%;
+    }
 	.teams {
 		height: 100vh;
 		position: relative;

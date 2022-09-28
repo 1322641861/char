@@ -80,7 +80,7 @@
 			text-align: center;
 			color: $uni-theme-color;
 			font-weight: bold;
-			font-size: 34rpx;
+			font-size: 42rpx;
 		}
 		.avatar {
 			display: flex;

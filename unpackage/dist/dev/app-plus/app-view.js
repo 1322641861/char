@@ -105,7 +105,8 @@ function initView() {
 
   }
   typeof injectStyles === 'function' && injectStyles();
-  Vue.component('mescroll-body', __webpack_require__(/*! @/uni_modules/mescroll-uni/components/mescroll-body/mescroll-body.vue */ 64).default);
+  Vue.component('mescroll-body', __webpack_require__(/*! @/components/mescroll-uni/components/mescroll-body/mescroll-body.vue */ 135).default);
+  Vue.component('mescroll-body', __webpack_require__(/*! @/components/mescroll-uni/components/mescroll-uni/mescroll-uni.js */ 156).default);
   UniViewJSBridge.publishHandler('webviewReady');
 }
 if (typeof plus !== 'undefined') {
@@ -1707,7 +1708,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 19);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.content {\r\n  position: relative;\r\n  height: 100vh;\n}\n.content .title {\r\n  padding-top: 20%;\r\n  text-align: center;\r\n  color: #fe7734;\r\n  font-weight: bold;\r\n  font-size: 34rpx;\n}\n.content .avatar {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding-top: 40rpx;\n}\n.content .avatar-img {\r\n  width: 200rpx;\r\n  height: 200rpx;\r\n  border-radius: 50%;\r\n  background: #eee 80% center/cover;\n}\n.content .right-more {\r\n  width: 54rpx;\r\n  height: 50rpx;\n}\n.content .name {\r\n  margin: 100rpx 20rpx 0;\r\n  border: 1rpx solid #eee;\r\n  border-radius: 40rpx;\n}\n.content .name .uni-input {\r\n  height: 80rpx;\r\n  line-height: 80rpx;\r\n  padding: 0 10rpx;\r\n  text-align: center;\n}\n.content .join {\r\n  position: absolute;\r\n  width: 100%;\r\n  text-align: center;\r\n  height: 80rpx;\r\n  line-height: 80rpx;\r\n  color: #fff;\r\n  bottom: 80rpx;\n}\n.content .join .join-text {\r\n  margin: 0 20rpx;\r\n  background-color: #fe7734;\r\n  border-radius: 40rpx;\n}\n.content .name-tip {\r\n  color: #dd524d;\r\n  font-size: 24rpx;\r\n  padding-left: 22rpx;\r\n  padding-top: 12rpx;\n}\n.content .select .top-nav {\r\n  height: 80rpx;\r\n  line-height: 80rpx;\r\n  text-align: center;\r\n  border-radius: 30rpx 30rpx 0 0;\r\n  overflow: hidden;\r\n  background-color: #fff;\n}\n.content .select .select-content {\r\n  background-color: #fff;\r\n  display: flex;\r\n  white-space: normal;\r\n  flex-wrap: wrap;\r\n  padding: 0 12rpx 30rpx;\n}\n.content .select .avatar-item {\r\n  width: calc((100vw - 24rpx)/4);\r\n  height: calc((100vw - 24rpx)/4);\r\n  border: 1rpx solid #fff;\r\n  border-radius: 8rpx;\r\n  box-sizing: border-box;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\n}\n.content .select .avatar-item .img {\r\n  width: 80%;\r\n  height: 80%;\r\n  text-align: center;\r\n  background: #eee 80% center/cover;\r\n  border-radius: 50%;\n}\n.content .select .avatar-selected {\r\n  border: 2rpx solid #fe7734;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.content {\r\n  position: relative;\r\n  height: 100vh;\n}\n.content .title {\r\n  padding-top: 20%;\r\n  text-align: center;\r\n  color: #fe7734;\r\n  font-weight: bold;\r\n  font-size: 42rpx;\n}\n.content .avatar {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding-top: 40rpx;\n}\n.content .avatar-img {\r\n  width: 200rpx;\r\n  height: 200rpx;\r\n  border-radius: 50%;\r\n  background: #eee 80% center/cover;\n}\n.content .right-more {\r\n  width: 54rpx;\r\n  height: 50rpx;\n}\n.content .name {\r\n  margin: 100rpx 20rpx 0;\r\n  border: 1rpx solid #eee;\r\n  border-radius: 40rpx;\n}\n.content .name .uni-input {\r\n  height: 80rpx;\r\n  line-height: 80rpx;\r\n  padding: 0 10rpx;\r\n  text-align: center;\n}\n.content .join {\r\n  position: absolute;\r\n  width: 100%;\r\n  text-align: center;\r\n  height: 80rpx;\r\n  line-height: 80rpx;\r\n  color: #fff;\r\n  bottom: 80rpx;\n}\n.content .join .join-text {\r\n  margin: 0 20rpx;\r\n  background-color: #fe7734;\r\n  border-radius: 40rpx;\n}\n.content .name-tip {\r\n  color: #dd524d;\r\n  font-size: 24rpx;\r\n  padding-left: 22rpx;\r\n  padding-top: 12rpx;\n}\n.content .select .top-nav {\r\n  height: 80rpx;\r\n  line-height: 80rpx;\r\n  text-align: center;\r\n  border-radius: 30rpx 30rpx 0 0;\r\n  overflow: hidden;\r\n  background-color: #fff;\n}\n.content .select .select-content {\r\n  background-color: #fff;\r\n  display: flex;\r\n  white-space: normal;\r\n  flex-wrap: wrap;\r\n  padding: 0 12rpx 30rpx;\n}\n.content .select .avatar-item {\r\n  width: calc((100vw - 24rpx)/4);\r\n  height: calc((100vw - 24rpx)/4);\r\n  border: 1rpx solid #fff;\r\n  border-radius: 8rpx;\r\n  box-sizing: border-box;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\n}\n.content .select .avatar-item .img {\r\n  width: 80%;\r\n  height: 80%;\r\n  text-align: center;\r\n  background: #eee 80% center/cover;\r\n  border-radius: 50%;\n}\n.content .select .avatar-selected {\r\n  border: 2rpx solid #fe7734;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -1796,39 +1797,40 @@ var render = function() {
     "v-uni-view",
     { staticClass: _vm._$g(0, "sc"), attrs: { _i: 0 } },
     [
+      _c("v-uni-view", { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } }),
       _c(
         "v-uni-view",
-        { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
+        { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
         [
           _c(
             "nav-bar",
-            { attrs: { _i: 2 } },
+            { attrs: { _i: 3 } },
             [
               _c(
                 "v-uni-scroll-view",
                 {
-                  staticClass: _vm._$g(3, "sc"),
+                  staticClass: _vm._$g(4, "sc"),
                   attrs: {
                     "scroll-x": "true",
                     "show-scrollbar": "false",
-                    _i: 3
+                    _i: 4
                   }
                 },
-                _vm._l(_vm._$g(4, "f"), function(item, i, $20, $30) {
+                _vm._l(_vm._$g(5, "f"), function(item, i, $20, $30) {
                   return _c(
                     "v-uni-view",
                     {
                       key: item,
-                      staticClass: _vm._$g("4-" + $30, "sc"),
-                      attrs: { _i: "4-" + $30 }
+                      staticClass: _vm._$g("5-" + $30, "sc"),
+                      attrs: { _i: "5-" + $30 }
                     },
                     [
                       _c(
                         "v-uni-view",
                         {
-                          staticClass: _vm._$g("5-" + $30, "sc"),
-                          style: _vm._$g("5-" + $30, "s"),
-                          attrs: { _i: "5-" + $30 },
+                          staticClass: _vm._$g("6-" + $30, "sc"),
+                          style: _vm._$g("6-" + $30, "s"),
+                          attrs: { _i: "6-" + $30 },
                           on: {
                             click: function($event) {
                               return _vm.$handleViewEvent($event)
@@ -1841,12 +1843,12 @@ var render = function() {
                               {
                                 name: "show",
                                 rawName: "v-show",
-                                value: _vm._$g("6-" + $30, "v-show"),
-                                expression: "_$g((\"6-\"+$30),'v-show')"
+                                value: _vm._$g("7-" + $30, "v-show"),
+                                expression: "_$g((\"7-\"+$30),'v-show')"
                               }
                             ],
-                            staticClass: _vm._$g("6-" + $30, "sc"),
-                            attrs: { _i: "6-" + $30 }
+                            staticClass: _vm._$g("7-" + $30, "sc"),
+                            attrs: { _i: "7-" + $30 }
                           })
                         ],
                         1
@@ -1863,17 +1865,17 @@ var render = function() {
         ],
         1
       ),
-      _c("chat-content", { attrs: { _i: 7 } }),
+      _c("chat-content", { attrs: { _i: 8 } }),
       _c("input-msg", {
         directives: [
           {
             name: "show",
             rawName: "v-show",
-            value: _vm._$g(8, "v-show"),
-            expression: "_$g(8,'v-show')"
+            value: _vm._$g(9, "v-show"),
+            expression: "_$g(9,'v-show')"
           }
         ],
-        attrs: { _i: 8 },
+        attrs: { _i: 9 },
         on: {
           sendMsg: function($event) {
             return _vm.$handleViewEvent($event)
@@ -1884,7 +1886,7 @@ var render = function() {
         }
       }),
       _c("private-room", {
-        attrs: { _i: 9 },
+        attrs: { _i: 10 },
         on: {
           putIsOpenRoom: function($event) {
             return _vm.$handleViewEvent($event)
@@ -2574,7 +2576,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 19);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.enter-content[data-v-11757553] {\r\n  position: fixed;\r\n  width: 100%;\r\n  bottom: 0;\r\n  padding: 12rpx;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  background-color: #f8f8f8;\r\n  align-items: center;\r\n  box-sizing: border-box;\r\n  z-index: 10;\n}\n.enter-content .team-input[data-v-11757553] {\r\n  background-color: #fff;\r\n  margin-right: 12rpx;\r\n  height: 70rpx;\r\n  padding: 0 8rpx;\r\n  border-radius: 8rpx;\r\n  flex: 1;\r\n  padding: 8rpx 4rpx;\n}\n.enter-content uni-image[data-v-11757553] {\r\n  width: 50rpx;\r\n  height: 50rpx;\r\n  padding: 0 5rpx;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.enter-content[data-v-11757553] {\r\n  position: fixed;\r\n  width: 100%;\r\n  bottom: 0;\r\n  padding: 16rpx 12rpx;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  background-color: #f8f8f8;\r\n  align-items: center;\r\n  box-sizing: border-box;\r\n  z-index: 10;\n}\n.enter-content .team-input[data-v-11757553] {\r\n  background-color: #fff;\r\n  margin-right: 12rpx;\r\n  height: 70rpx;\r\n  padding: 0 8rpx;\r\n  border-radius: 8rpx;\r\n  flex: 1;\r\n  padding: 8rpx 4rpx;\n}\n.enter-content uni-image[data-v-11757553] {\r\n  width: 50rpx;\r\n  height: 50rpx;\r\n  padding: 0 5rpx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -2702,153 +2704,145 @@ var render = function() {
                 }
               }
             },
-            [
-              _c("v-uni-view", { style: _vm._$g(2, "s"), attrs: { _i: 2 } }),
-              _vm._l(_vm._$g(3, "f"), function(item, i, $20, $30) {
-                return _c(
-                  "v-uni-view",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm._$g("3-" + $30, "v-show"),
-                        expression: "_$g((\"3-\"+$30),'v-show')"
-                      }
-                    ],
-                    key: item,
-                    staticClass: _vm._$g("3-" + $30, "sc"),
-                    attrs: { _i: "3-" + $30 }
-                  },
-                  [
-                    _vm._$g("4-" + $30, "i")
-                      ? _c(
-                          "v-uni-view",
-                          {
-                            staticClass: _vm._$g("4-" + $30, "sc"),
-                            attrs: { _i: "4-" + $30 }
-                          },
-                          [
-                            _c(
-                              "v-uni-view",
-                              {
-                                staticClass: _vm._$g("5-" + $30, "sc"),
-                                attrs: { _i: "5-" + $30 }
-                              },
-                              [_vm._v(_vm._$g("5-" + $30, "t0-0"))]
-                            )
-                          ],
-                          1
-                        )
-                      : _vm._$g("6-" + $30, "e")
-                      ? _c(
-                          "v-uni-view",
-                          {
-                            staticClass: _vm._$g("6-" + $30, "sc"),
-                            attrs: { _i: "6-" + $30 }
-                          },
-                          [
-                            _c("v-uni-view", {
-                              staticClass: _vm._$g("7-" + $30, "sc"),
-                              style: _vm._$g("7-" + $30, "s"),
-                              attrs: { _i: "7-" + $30 }
-                            }),
-                            _c(
-                              "v-uni-view",
-                              {
-                                staticClass: _vm._$g("8-" + $30, "sc"),
-                                attrs: { _i: "8-" + $30 }
-                              },
-                              [
-                                _c(
-                                  "v-uni-view",
-                                  {
-                                    staticClass: _vm._$g("9-" + $30, "sc"),
-                                    attrs: { _i: "9-" + $30 }
-                                  },
-                                  [_vm._v("我")]
-                                ),
-                                _c("triangle-component", {
-                                  attrs: { _i: "10-" + $30 }
-                                }),
-                                _c(
-                                  "v-uni-view",
-                                  {
-                                    staticClass: _vm._$g("11-" + $30, "sc"),
-                                    attrs: { _i: "11-" + $30 }
-                                  },
-                                  [_vm._v(_vm._$g("11-" + $30, "t0-0"))]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      : _vm._$g("12-" + $30, "e")
-                      ? _c(
-                          "v-uni-view",
-                          {
-                            staticClass: _vm._$g("12-" + $30, "sc"),
-                            attrs: { _i: "12-" + $30 }
-                          },
-                          [
-                            _c("v-uni-view", {
-                              staticClass: _vm._$g("13-" + $30, "sc"),
-                              style: _vm._$g("13-" + $30, "s"),
-                              attrs: { _i: "13-" + $30 }
-                            }),
-                            _c(
-                              "v-uni-view",
-                              {
-                                staticClass: _vm._$g("14-" + $30, "sc"),
-                                attrs: { _i: "14-" + $30 }
-                              },
-                              [
-                                _c(
-                                  "v-uni-view",
-                                  {
-                                    staticClass: _vm._$g("15-" + $30, "sc"),
-                                    attrs: { _i: "15-" + $30 }
-                                  },
-                                  [_vm._v(_vm._$g("15-" + $30, "t0-0"))]
-                                ),
-                                _c("triangle-component", {
-                                  attrs: { _i: "16-" + $30 }
-                                }),
-                                _c(
-                                  "v-uni-view",
-                                  {
-                                    staticClass: _vm._$g("17-" + $30, "sc"),
-                                    attrs: { _i: "17-" + $30 }
-                                  },
-                                  [_vm._v(_vm._$g("17-" + $30, "t0-0"))]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      : _vm._e()
+            _vm._l(_vm._$g(2, "f"), function(item, i, $20, $30) {
+              return _c(
+                "v-uni-view",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: _vm._$g("2-" + $30, "v-show"),
+                      expression: "_$g((\"2-\"+$30),'v-show')"
+                    }
                   ],
-                  1
-                )
-              }),
-              _c("v-uni-view", {
-                staticClass: _vm._$g(18, "sc"),
-                style: _vm._$g(18, "s"),
-                attrs: { _i: 18 }
-              })
-            ],
-            2
+                  key: item,
+                  staticClass: _vm._$g("2-" + $30, "sc"),
+                  attrs: { _i: "2-" + $30 }
+                },
+                [
+                  _vm._$g("3-" + $30, "i")
+                    ? _c(
+                        "v-uni-view",
+                        {
+                          staticClass: _vm._$g("3-" + $30, "sc"),
+                          attrs: { _i: "3-" + $30 }
+                        },
+                        [
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g("4-" + $30, "sc"),
+                              attrs: { _i: "4-" + $30 }
+                            },
+                            [_vm._v(_vm._$g("4-" + $30, "t0-0"))]
+                          )
+                        ],
+                        1
+                      )
+                    : _vm._$g("5-" + $30, "e")
+                    ? _c(
+                        "v-uni-view",
+                        {
+                          staticClass: _vm._$g("5-" + $30, "sc"),
+                          attrs: { _i: "5-" + $30 }
+                        },
+                        [
+                          _c("v-uni-view", {
+                            staticClass: _vm._$g("6-" + $30, "sc"),
+                            style: _vm._$g("6-" + $30, "s"),
+                            attrs: { _i: "6-" + $30 }
+                          }),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g("7-" + $30, "sc"),
+                              attrs: { _i: "7-" + $30 }
+                            },
+                            [
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g("8-" + $30, "sc"),
+                                  attrs: { _i: "8-" + $30 }
+                                },
+                                [_vm._v("我")]
+                              ),
+                              _c("triangle-component", {
+                                attrs: { _i: "9-" + $30 }
+                              }),
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g("10-" + $30, "sc"),
+                                  attrs: { _i: "10-" + $30 }
+                                },
+                                [_vm._v(_vm._$g("10-" + $30, "t0-0"))]
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    : _vm._$g("11-" + $30, "e")
+                    ? _c(
+                        "v-uni-view",
+                        {
+                          staticClass: _vm._$g("11-" + $30, "sc"),
+                          attrs: { _i: "11-" + $30 }
+                        },
+                        [
+                          _c("v-uni-view", {
+                            staticClass: _vm._$g("12-" + $30, "sc"),
+                            style: _vm._$g("12-" + $30, "s"),
+                            attrs: { _i: "12-" + $30 }
+                          }),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g("13-" + $30, "sc"),
+                              attrs: { _i: "13-" + $30 }
+                            },
+                            [
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g("14-" + $30, "sc"),
+                                  attrs: { _i: "14-" + $30 }
+                                },
+                                [_vm._v(_vm._$g("14-" + $30, "t0-0"))]
+                              ),
+                              _c("triangle-component", {
+                                attrs: { _i: "15-" + $30 }
+                              }),
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g("16-" + $30, "sc"),
+                                  attrs: { _i: "16-" + $30 }
+                                },
+                                [_vm._v(_vm._$g("16-" + $30, "t0-0"))]
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    : _vm._e()
+                ],
+                1
+              )
+            }),
+            1
           )
         : _c(
             "mescroll-uni",
             {
-              staticClass: _vm._$g(19, "sc"),
-              style: _vm._$g(19, "s"),
-              attrs: { _i: 19 },
+              staticClass: _vm._$g(17, "sc"),
+              style: _vm._$g(17, "s"),
+              attrs: { _i: 17 },
               on: {
                 init: function($event) {
                   return _vm.$handleViewEvent($event)
@@ -2859,8 +2853,8 @@ var render = function() {
               }
             },
             [
-              _c("v-uni-view", { style: _vm._$g(20, "s"), attrs: { _i: 20 } }),
-              _vm._l(_vm._$g(21, "f"), function(item, i, $21, $31) {
+              _c("v-uni-view", { style: _vm._$g(18, "s"), attrs: { _i: 18 } }),
+              _vm._l(_vm._$g(19, "f"), function(item, i, $21, $31) {
                 return _c(
                   "v-uni-view",
                   {
@@ -2868,16 +2862,35 @@ var render = function() {
                       {
                         name: "show",
                         rawName: "v-show",
-                        value: _vm._$g("21-" + $31, "v-show"),
-                        expression: "_$g((\"21-\"+$31),'v-show')"
+                        value: _vm._$g("19-" + $31, "v-show"),
+                        expression: "_$g((\"19-\"+$31),'v-show')"
                       }
                     ],
                     key: item,
-                    staticClass: _vm._$g("21-" + $31, "sc"),
-                    attrs: { _i: "21-" + $31 }
+                    staticClass: _vm._$g("19-" + $31, "sc"),
+                    attrs: { _i: "19-" + $31 }
                   },
                   [
-                    _vm._$g("22-" + $31, "i")
+                    _vm._$g("20-" + $31, "i")
+                      ? _c(
+                          "v-uni-view",
+                          {
+                            staticClass: _vm._$g("20-" + $31, "sc"),
+                            attrs: { _i: "20-" + $31 }
+                          },
+                          [
+                            _c(
+                              "v-uni-view",
+                              {
+                                staticClass: _vm._$g("21-" + $31, "sc"),
+                                attrs: { _i: "21-" + $31 }
+                              },
+                              [_vm._v(_vm._$g("21-" + $31, "t0-0"))]
+                            )
+                          ],
+                          1
+                        )
+                      : _vm._$g("22-" + $31, "e")
                       ? _c(
                           "v-uni-view",
                           {
@@ -2885,55 +2898,36 @@ var render = function() {
                             attrs: { _i: "22-" + $31 }
                           },
                           [
-                            _c(
-                              "v-uni-view",
-                              {
-                                staticClass: _vm._$g("23-" + $31, "sc"),
-                                attrs: { _i: "23-" + $31 }
-                              },
-                              [_vm._v(_vm._$g("23-" + $31, "t0-0"))]
-                            )
-                          ],
-                          1
-                        )
-                      : _vm._$g("24-" + $31, "e")
-                      ? _c(
-                          "v-uni-view",
-                          {
-                            staticClass: _vm._$g("24-" + $31, "sc"),
-                            attrs: { _i: "24-" + $31 }
-                          },
-                          [
                             _c("v-uni-view", {
-                              staticClass: _vm._$g("25-" + $31, "sc"),
-                              style: _vm._$g("25-" + $31, "s"),
-                              attrs: { _i: "25-" + $31 }
+                              staticClass: _vm._$g("23-" + $31, "sc"),
+                              style: _vm._$g("23-" + $31, "s"),
+                              attrs: { _i: "23-" + $31 }
                             }),
                             _c(
                               "v-uni-view",
                               {
-                                staticClass: _vm._$g("26-" + $31, "sc"),
-                                attrs: { _i: "26-" + $31 }
+                                staticClass: _vm._$g("24-" + $31, "sc"),
+                                attrs: { _i: "24-" + $31 }
                               },
                               [
+                                _c(
+                                  "v-uni-view",
+                                  {
+                                    staticClass: _vm._$g("25-" + $31, "sc"),
+                                    attrs: { _i: "25-" + $31 }
+                                  },
+                                  [_vm._v("我")]
+                                ),
+                                _c("triangle-component", {
+                                  attrs: { _i: "26-" + $31 }
+                                }),
                                 _c(
                                   "v-uni-view",
                                   {
                                     staticClass: _vm._$g("27-" + $31, "sc"),
                                     attrs: { _i: "27-" + $31 }
                                   },
-                                  [_vm._v("我")]
-                                ),
-                                _c("triangle-component", {
-                                  attrs: { _i: "28-" + $31 }
-                                }),
-                                _c(
-                                  "v-uni-view",
-                                  {
-                                    staticClass: _vm._$g("29-" + $31, "sc"),
-                                    attrs: { _i: "29-" + $31 }
-                                  },
-                                  [_vm._v(_vm._$g("29-" + $31, "t0-0"))]
+                                  [_vm._v(_vm._$g("27-" + $31, "t0-0"))]
                                 )
                               ],
                               1
@@ -2941,26 +2935,37 @@ var render = function() {
                           ],
                           1
                         )
-                      : _vm._$g("30-" + $31, "e")
+                      : _vm._$g("28-" + $31, "e")
                       ? _c(
                           "v-uni-view",
                           {
-                            staticClass: _vm._$g("30-" + $31, "sc"),
-                            attrs: { _i: "30-" + $31 }
+                            staticClass: _vm._$g("28-" + $31, "sc"),
+                            attrs: { _i: "28-" + $31 }
                           },
                           [
                             _c("v-uni-view", {
-                              staticClass: _vm._$g("31-" + $31, "sc"),
-                              style: _vm._$g("31-" + $31, "s"),
-                              attrs: { _i: "31-" + $31 }
+                              staticClass: _vm._$g("29-" + $31, "sc"),
+                              style: _vm._$g("29-" + $31, "s"),
+                              attrs: { _i: "29-" + $31 }
                             }),
                             _c(
                               "v-uni-view",
                               {
-                                staticClass: _vm._$g("32-" + $31, "sc"),
-                                attrs: { _i: "32-" + $31 }
+                                staticClass: _vm._$g("30-" + $31, "sc"),
+                                attrs: { _i: "30-" + $31 }
                               },
                               [
+                                _c(
+                                  "v-uni-view",
+                                  {
+                                    staticClass: _vm._$g("31-" + $31, "sc"),
+                                    attrs: { _i: "31-" + $31 }
+                                  },
+                                  [_vm._v(_vm._$g("31-" + $31, "t0-0"))]
+                                ),
+                                _c("triangle-component", {
+                                  attrs: { _i: "32-" + $31 }
+                                }),
                                 _c(
                                   "v-uni-view",
                                   {
@@ -2968,17 +2973,6 @@ var render = function() {
                                     attrs: { _i: "33-" + $31 }
                                   },
                                   [_vm._v(_vm._$g("33-" + $31, "t0-0"))]
-                                ),
-                                _c("triangle-component", {
-                                  attrs: { _i: "34-" + $31 }
-                                }),
-                                _c(
-                                  "v-uni-view",
-                                  {
-                                    staticClass: _vm._$g("35-" + $31, "sc"),
-                                    attrs: { _i: "35-" + $31 }
-                                  },
-                                  [_vm._v(_vm._$g("35-" + $31, "t0-0"))]
                                 )
                               ],
                               1
@@ -2992,9 +2986,9 @@ var render = function() {
                 )
               }),
               _c("v-uni-view", {
-                staticClass: _vm._$g(36, "sc"),
-                style: _vm._$g(36, "s"),
-                attrs: { _i: 36 }
+                staticClass: _vm._$g(34, "sc"),
+                style: _vm._$g(34, "s"),
+                attrs: { _i: 34 }
               })
             ],
             2
@@ -5205,7 +5199,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 19);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.triangle[data-v-73daba43] {\r\n  position: relative;\n}\n.triangle .tri-view[data-v-73daba43] {\r\n  border-radius: 10rpx;\r\n  padding: 12rpx;\r\n  display: inline-block;\r\n  font-size: 26rpx;\r\n  line-height: 40rpx;\r\n  word-break: break-word;\n}\n.triangle .left[data-v-73daba43] {\r\n  margin-left: 4rpx;\n}\n.triangle .left[data-v-73daba43]::before {\r\n  content: '';\r\n  width: 0;\r\n  height: 0;\r\n  position: absolute;\r\n  left: -17rpx;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  border: 11rpx solid transparent;\r\n  border-right-color: #f0f2f4;\n}\n.triangle .right[data-v-73daba43] {\r\n  margin-right: 4rpx;\n}\n.triangle .right[data-v-73daba43]::after {\r\n  content: '';\r\n  width: 0;\r\n  height: 0;\r\n  position: absolute;\r\n  right: -17rpx;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  border: 11rpx solid transparent;\r\n  border-left-color: #fde8d8;\n}\n.mine-bg[data-v-73daba43] {\r\n  background: #f0f2f4;\n}\n.other-bg[data-v-73daba43] {\r\n  background: #fde8d8;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.triangle[data-v-73daba43] {\r\n  position: relative;\n}\n.triangle .tri-view[data-v-73daba43] {\r\n  border-radius: 10rpx;\r\n  padding: 16rpx;\r\n  display: inline-block;\r\n  font-size: 28rpx;\r\n  line-height: 40rpx;\r\n  word-break: break-word;\n}\n.triangle .left[data-v-73daba43] {\r\n  margin-left: 4rpx;\n}\n.triangle .left[data-v-73daba43]::before {\r\n  content: '';\r\n  width: 0;\r\n  height: 0;\r\n  position: absolute;\r\n  left: -17rpx;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  border: 11rpx solid transparent;\r\n  border-right-color: #f0f2f4;\n}\n.triangle .right[data-v-73daba43] {\r\n  margin-right: 4rpx;\r\n  text-align: left;\n}\n.triangle .right[data-v-73daba43]::after {\r\n  content: '';\r\n  width: 0;\r\n  height: 0;\r\n  position: absolute;\r\n  right: -17rpx;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  border: 11rpx solid transparent;\r\n  border-left-color: #fde8d8;\n}\n.mine-bg[data-v-73daba43] {\r\n  background: #f0f2f4;\n}\n.other-bg[data-v-73daba43] {\r\n  background: #fde8d8;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -5257,7 +5251,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 19);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.custom-scroll[data-v-03fe1bbf] {\r\n  overflow-y: auto;\n}\n.msg-content[data-v-03fe1bbf] {\r\n  background-color: #fff;\n}\n.msg-content .join-text[data-v-03fe1bbf] {\r\n  font-size: 26rpx;\r\n  text-align: center;\n}\n.msg-content .join-text .join-msg[data-v-03fe1bbf] {\r\n  display: inline-block;\r\n  margin: 16rpx auto;\r\n  background-color: #f8f8f8;\r\n  padding: 3rpx 12rpx;\r\n  border-radius: 5rpx;\r\n  color: #666;\r\n  font-size: 24rpx;\n}\n.msg-content .mine[data-v-03fe1bbf] {\r\n  display: flex;\r\n  padding: 12rpx 12rpx 12rpx;\n}\n.msg-content .mine .mine-img[data-v-03fe1bbf] {\r\n  width: 60rpx;\r\n  height: 60rpx;\r\n  background: #eee 80% center/cover;\r\n  border-radius: 50%;\r\n  margin-right: 12rpx;\n}\n.msg-content .other[data-v-03fe1bbf] {\r\n  flex-flow: row-reverse;\n}\n.msg-content .other .other-img[data-v-03fe1bbf] {\r\n  margin-right: 0;\r\n  margin-left: 12rpx;\n}\n.content[data-v-03fe1bbf] {\r\n  text-align: right;\r\n  flex: 1;\n}\n.content .name[data-v-03fe1bbf],\r\n.content .date[data-v-03fe1bbf] {\r\n  font-size: 22rpx;\r\n  color: #999;\n}\n.content-mine[data-v-03fe1bbf] {\r\n  text-align: left;\r\n  flex: 1;\n}\n.bottom-h[data-v-03fe1bbf] {\r\n  height: 90rpx;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.custom-scroll[data-v-03fe1bbf] {\r\n  overflow-y: auto;\n}\n.msg-content[data-v-03fe1bbf] {\r\n  background-color: #fff;\n}\n.msg-content .join-text[data-v-03fe1bbf] {\r\n  font-size: 27rpx;\r\n  text-align: center;\n}\n.msg-content .join-text .join-msg[data-v-03fe1bbf] {\r\n  display: inline-block;\r\n  margin: 16rpx auto;\r\n  background-color: #f8f8f8;\r\n  padding: 3rpx 12rpx;\r\n  border-radius: 5rpx;\r\n  color: #666;\r\n  font-size: 27rpx;\n}\n.msg-content .mine[data-v-03fe1bbf] {\r\n  display: flex;\r\n  padding: 12rpx 12rpx 12rpx;\n}\n.msg-content .mine .mine-img[data-v-03fe1bbf] {\r\n  width: 60rpx;\r\n  height: 60rpx;\r\n  background: #eee 80% center/cover;\r\n  border-radius: 50%;\r\n  margin-right: 12rpx;\n}\n.msg-content .other[data-v-03fe1bbf] {\r\n  flex-flow: row-reverse;\n}\n.msg-content .other .other-img[data-v-03fe1bbf] {\r\n  margin-right: 0;\r\n  margin-left: 12rpx;\n}\n.content[data-v-03fe1bbf] {\r\n  text-align: right;\r\n  flex: 1;\n}\n.content .name[data-v-03fe1bbf],\r\n.content .date[data-v-03fe1bbf] {\r\n  font-size: 24rpx;\r\n  color: #999;\n}\n.content-mine[data-v-03fe1bbf] {\r\n  text-align: left;\r\n  flex: 1;\n}\n.bottom-h[data-v-03fe1bbf] {\r\n  height: 90rpx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -5564,7 +5558,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 19);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.teams {\r\n  height: 100vh;\r\n  position: relative;\n}\n.teams .top-nav {\r\n  position: fixed;\r\n  top: 0;\r\n  width: 100%;\r\n  z-index: 2;\n}\n.teams .teams-list {\r\n  white-space: nowrap;\r\n  width: 100%;\r\n  height: 80rpx;\n}\n.teams .teams-list .team-img {\r\n  width: 80rpx;\r\n  height: 80rpx;\r\n  display: inline-block;\n}\n.teams .teams-list .img {\r\n  width: 60rpx;\r\n  height: 60rpx;\r\n  background: #eee 80% center/cover;\r\n  border-radius: 50%;\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\n}\n.teams .teams-list .img .point {\r\n  position: absolute;\r\n  width: 14rpx;\r\n  height: 14rpx;\r\n  border-radius: 50%;\r\n  background-color: #fa3c3c;\r\n  bottom: -5rpx;\r\n  left: 6rpx;\n}\n.teams .bottom-h {\r\n  height: 90rpx;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.status-bar {\r\n  height: var(--status-bar-height);\r\n  width: 100%;\n}\n.teams {\r\n  height: 100vh;\r\n  position: relative;\n}\n.teams .top-nav {\r\n  position: fixed;\r\n  top: 0;\r\n  width: 100%;\r\n  z-index: 2;\n}\n.teams .teams-list {\r\n  white-space: nowrap;\r\n  width: 100%;\r\n  height: 80rpx;\n}\n.teams .teams-list .team-img {\r\n  width: 80rpx;\r\n  height: 80rpx;\r\n  display: inline-block;\n}\n.teams .teams-list .img {\r\n  width: 60rpx;\r\n  height: 60rpx;\r\n  background: #eee 80% center/cover;\r\n  border-radius: 50%;\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\n}\n.teams .teams-list .img .point {\r\n  position: absolute;\r\n  width: 14rpx;\r\n  height: 14rpx;\r\n  border-radius: 50%;\r\n  background-color: #fa3c3c;\r\n  bottom: -5rpx;\r\n  left: 6rpx;\n}\n.teams .bottom-h {\r\n  height: 90rpx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -5620,6 +5614,1809 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*每个页面公共css *
 // Exports
 module.exports = exports;
 
+
+/***/ }),
+/* 135 */
+/*!***********************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _mescroll_body_vue_vue_type_template_id_4a84bd48_scoped_true_filter_modules_eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0_3D___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mescroll-body.vue?vue&type=template&id=4a84bd48&scoped=true&filter-modules=eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0%3D& */ 136);
+/* harmony import */ var _mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mescroll-body.vue?vue&type=renderjs&module=renderBiz&lang=js& */ 138);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mescroll-body.vue?vue&type=script&lang=js& */ 141);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_2__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_2__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _mescroll_body_vue_vue_type_style_index_0_id_4a84bd48_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./mescroll-body.vue?vue&type=style&index=0&id=4a84bd48&scoped=true&lang=css& */ 151);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 13);
+/* harmony import */ var _mescroll_uni_wxs_wxs_wxs_vue_type_custom_index_0_blockType_script_issuerPath_F_3A_5Cvue_project_5Cuni_app_5Cchar_5Cchat_5Ccomponents_5Cmescroll_uni_5Ccomponents_5Cmescroll_body_5Cmescroll_body_vue_module_wxsBiz_lang_wxs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../mescroll-uni/wxs/wxs.wxs?vue&type=custom&index=0&blockType=script&issuerPath=F%3A%5Cvue_project%5Cuni-app%5Cchar%5Cchat%5Ccomponents%5Cmescroll-uni%5Ccomponents%5Cmescroll-body%5Cmescroll-body.vue&module=wxsBiz&lang=wxs */ 154);
+
+
+_mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"].__module = 'renderBiz'
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
+  _mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_2__["default"],
+  _mescroll_body_vue_vue_type_template_id_4a84bd48_scoped_true_filter_modules_eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0_3D___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _mescroll_body_vue_vue_type_template_id_4a84bd48_scoped_true_filter_modules_eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0_3D___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "4a84bd48",
+  null,
+  false,
+  _mescroll_body_vue_vue_type_template_id_4a84bd48_scoped_true_filter_modules_eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0_3D___WEBPACK_IMPORTED_MODULE_0__["components"],
+  _mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"]
+)
+
+/* custom blocks */
+
+if (typeof _mescroll_uni_wxs_wxs_wxs_vue_type_custom_index_0_blockType_script_issuerPath_F_3A_5Cvue_project_5Cuni_app_5Cchar_5Cchat_5Ccomponents_5Cmescroll_uni_5Ccomponents_5Cmescroll_body_5Cmescroll_body_vue_module_wxsBiz_lang_wxs__WEBPACK_IMPORTED_MODULE_5__["default"] === 'function') Object(_mescroll_uni_wxs_wxs_wxs_vue_type_custom_index_0_blockType_script_issuerPath_F_3A_5Cvue_project_5Cuni_app_5Cchar_5Cchat_5Ccomponents_5Cmescroll_uni_5Ccomponents_5Cmescroll_body_5Cmescroll_body_vue_module_wxsBiz_lang_wxs__WEBPACK_IMPORTED_MODULE_5__["default"])(component)
+
+component.options.__file = "components/mescroll-uni/components/mescroll-body/mescroll-body.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+/* 136 */
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue?vue&type=template&id=4a84bd48&scoped=true&filter-modules=eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0%3D& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns, recyclableRender, components */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_template_id_4a84bd48_scoped_true_filter_modules_eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0_3D___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./mescroll-body.vue?vue&type=template&id=4a84bd48&scoped=true&filter-modules=eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0%3D& */ 137);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_template_id_4a84bd48_scoped_true_filter_modules_eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0_3D___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_template_id_4a84bd48_scoped_true_filter_modules_eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0_3D___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_template_id_4a84bd48_scoped_true_filter_modules_eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0_3D___WEBPACK_IMPORTED_MODULE_0__["recyclableRender"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "components", function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_template_id_4a84bd48_scoped_true_filter_modules_eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0_3D___WEBPACK_IMPORTED_MODULE_0__["components"]; });
+
+
+
+/***/ }),
+/* 137 */
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue?vue&type=template&id=4a84bd48&scoped=true&filter-modules=eyJ3eHNCaXoiOnsidHlwZSI6InNjcmlwdCIsImNvbnRlbnQiOiIiLCJzdGFydCI6MzIzMSwiYXR0cnMiOnsic3JjIjoiLi4vbWVzY3JvbGwtdW5pL3d4cy93eHMud3hzIiwibW9kdWxlIjoid3hzQml6IiwibGFuZyI6Ind4cyJ9LCJlbmQiOjMyMzF9LCJyZW5kZXJCaXoiOnsidHlwZSI6InJlbmRlcmpzIiwiY29udGVudCI6IiIsInN0YXJ0IjozMzY0LCJhdHRycyI6eyJtb2R1bGUiOiJyZW5kZXJCaXoiLCJsYW5nIjoianMifSwiZW5kIjozNDcxfX0%3D& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns, recyclableRender, components */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
+var components
+try {
+  components = {
+    mescrollEmpty: __webpack_require__(/*! @/uni_modules/mescroll-uni/components/mescroll-empty/mescroll-empty.vue */ 67)
+      .default
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-uni-view",
+    {
+      wxsProps: { "change:prop": "wxsProp" },
+      staticClass: _vm._$g(0, "sc"),
+      class: _vm._$g(0, "c"),
+      style: _vm._$g(0, "s"),
+      attrs: {
+        "change:prop": _vm.wxsBiz.propObserver,
+        prop: _vm._$gc(0, "change:wxsProp"),
+        _i: 0
+      },
+      on: {
+        touchstart: function($event) {
+          $event = _vm.$handleWxsEvent($event)
+          _vm.wxsBiz.touchstartEvent($event, _vm.$getComponentDescriptor())
+        },
+        touchmove: function($event) {
+          $event = _vm.$handleWxsEvent($event)
+          _vm.wxsBiz.touchmoveEvent($event, _vm.$getComponentDescriptor())
+        },
+        touchend: function($event) {
+          $event = _vm.$handleWxsEvent($event)
+          _vm.wxsBiz.touchendEvent($event, _vm.$getComponentDescriptor())
+        },
+        touchcancel: function($event) {
+          $event = _vm.$handleWxsEvent($event)
+          _vm.wxsBiz.touchendEvent($event, _vm.$getComponentDescriptor())
+        }
+      }
+    },
+    [
+      _vm._$g(1, "i")
+        ? _c("v-uni-view", {
+            staticClass: _vm._$g(1, "sc"),
+            style: _vm._$g(1, "s"),
+            attrs: { _i: 1 }
+          })
+        : _vm._e(),
+      _c(
+        "v-uni-view",
+        {
+          wxsProps: { "change:prop": "callProp" },
+          staticClass: _vm._$g(2, "sc"),
+          style: _vm._$g(2, "s"),
+          attrs: {
+            "change:prop": _vm.wxsBiz.callObserver,
+            prop: _vm._$gc(2, "change:callProp"),
+            _i: 2
+          }
+        },
+        [
+          _vm._$g(3, "i")
+            ? _c(
+                "v-uni-view",
+                {
+                  staticClass: _vm._$g(3, "sc"),
+                  style: _vm._$g(3, "s"),
+                  attrs: { _i: 3 }
+                },
+                [
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
+                    [
+                      _c("v-uni-view", {
+                        staticClass: _vm._$g(5, "sc"),
+                        class: _vm._$g(5, "c"),
+                        style: _vm._$g(5, "s"),
+                        attrs: { _i: 5 }
+                      }),
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(6, "sc"), attrs: { _i: 6 } },
+                        [_vm._v(_vm._$g(6, "t0-0"))]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            : _vm._e(),
+          _vm._t("default", null, { _i: 7 }),
+          _vm._$g(8, "i")
+            ? _c("mescroll-empty", {
+                attrs: { _i: 8 },
+                on: {
+                  emptyclick: function($event) {
+                    return _vm.$handleViewEvent($event)
+                  }
+                }
+              })
+            : _vm._e(),
+          _vm._$g(9, "i")
+            ? _c(
+                "v-uni-view",
+                {
+                  staticClass: _vm._$g(9, "sc"),
+                  style: _vm._$g(9, "s"),
+                  attrs: { _i: 9 }
+                },
+                [
+                  _c(
+                    "v-uni-view",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm._$g(10, "v-show"),
+                          expression: "_$g(10,'v-show')"
+                        }
+                      ],
+                      attrs: { _i: 10 }
+                    },
+                    [
+                      _c("v-uni-view", {
+                        staticClass: _vm._$g(11, "sc"),
+                        style: _vm._$g(11, "s"),
+                        attrs: { _i: 11 }
+                      }),
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(12, "sc"), attrs: { _i: 12 } },
+                        [_vm._v(_vm._$g(12, "t0-0"))]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._$g(13, "i")
+                    ? _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(13, "sc"), attrs: { _i: 13 } },
+                        [_vm._v(_vm._$g(13, "t0-0"))]
+                      )
+                    : _vm._e()
+                ],
+                1
+              )
+            : _vm._e()
+        ],
+        2
+      ),
+      _vm._$g(14, "i")
+        ? _c("v-uni-view", {
+            staticClass: _vm._$g(14, "sc"),
+            attrs: { _i: 14 }
+          })
+        : _vm._e(),
+      _c("mescroll-top", {
+        attrs: { _i: 15 },
+        on: {
+          click: function($event) {
+            return _vm.$handleViewEvent($event)
+          }
+        },
+        model: {
+          value: _vm._$g(15, "v-model"),
+          callback: function() {},
+          expression: "isShowToTop"
+        }
+      }),
+      _c("v-uni-view", {
+        wxsProps: { "change:prop": "wxsProp" },
+        attrs: {
+          "change:prop": _vm.renderBiz.propObserver,
+          prop: _vm._$gc(16, "change:wxsProp"),
+          _i: 16
+        }
+      })
+    ],
+    1
+  )
+}
+var recyclableRender = false
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+/* 138 */
+/*!*******************************************************************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue?vue&type=renderjs&module=renderBiz&lang=js& ***!
+  \*******************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./mescroll-body.vue?vue&type=renderjs&module=renderBiz&lang=js& */ 139);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_renderjs_module_renderBiz_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+/* 139 */
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue?vue&type=renderjs&module=renderBiz&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _renderjs = _interopRequireDefault(__webpack_require__(/*! ../mescroll-uni/wxs/renderjs.js */ 140));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+{
+  mixins: [_renderjs.default] };exports.default = _default;
+
+/***/ }),
+/* 140 */
+/*!********************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/wxs/renderjs.js ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 使用renderjs直接操作window对象,实现动态控制app和h5的bounce
+// bounce: iOS橡皮筋,Android半月弧,h5浏览器下拉背景等效果 (下拉刷新时禁止)
+// https://uniapp.dcloud.io/frame?id=renderjs
+
+// 与wxs的me实例一致
+var me = {};
+
+// 初始化window对象的touch事件 (仅初始化一次)
+if (window && !window.$mescrollRenderInit) {
+  window.$mescrollRenderInit = true;
+
+
+  window.addEventListener('touchstart', function (e) {
+    if (me.disabled()) return;
+    me.startPoint = me.getPoint(e); // 记录起点
+  }, { passive: true });
+
+
+  window.addEventListener('touchmove', function (e) {
+    if (me.disabled()) return;
+    if (me.getScrollTop() > 0) return; // 需在顶部下拉,才禁止bounce
+
+    var curPoint = me.getPoint(e); // 当前点
+    var moveY = curPoint.y - me.startPoint.y; // 和起点比,移动的距离,大于0向下拉,小于0向上拉
+    // 向下拉
+    if (moveY > 0) {
+      // 可下拉的条件
+      if (!me.isDownScrolling && !me.optDown.isLock && (!me.isUpScrolling || me.isUpScrolling && me.isUpBoth)) {
+
+        // 只有touch在mescroll的view上面,才禁止bounce
+        var el = e.target;
+        var isMescrollTouch = false;
+        while (el && el.tagName && el.tagName !== 'UNI-PAGE-BODY' && el.tagName != "BODY") {
+          var cls = el.classList;
+          if (cls && cls.contains('mescroll-render-touch')) {
+            isMescrollTouch = true;
+            break;
+          }
+          el = el.parentNode; // 继续检查其父元素
+        }
+        // 禁止bounce (不会对swiper和iOS侧滑返回造成影响)
+        if (isMescrollTouch && e.cancelable && !e.defaultPrevented) e.preventDefault();
+      }
+    }
+  }, { passive: false });
+}
+
+/* 获取滚动条的位置 */
+me.getScrollTop = function () {
+  return me.scrollTop || 0;
+};
+
+/* 是否禁用下拉刷新 */
+me.disabled = function () {
+  return !me.optDown || !me.optDown.use || me.optDown.native;
+};
+
+/* 根据点击滑动事件获取第一个手指的坐标 */
+me.getPoint = function (e) {
+  if (!e) {
+    return { x: 0, y: 0 };
+  }
+  if (e.touches && e.touches[0]) {
+    return { x: e.touches[0].pageX, y: e.touches[0].pageY };
+  } else if (e.changedTouches && e.changedTouches[0]) {
+    return { x: e.changedTouches[0].pageX, y: e.changedTouches[0].pageY };
+  } else {
+    return { x: e.clientX, y: e.clientY };
+  }
+};
+
+/**
+    * 监听逻辑层数据的变化 (实时更新数据)
+    */
+function propObserver(wxsProp) {
+  me.optDown = wxsProp.optDown;
+  me.scrollTop = wxsProp.scrollTop;
+  me.isDownScrolling = wxsProp.isDownScrolling;
+  me.isUpScrolling = wxsProp.isUpScrolling;
+  me.isUpBoth = wxsProp.isUpBoth;
+}
+
+/* 导出模块 */
+var renderBiz = {
+  data: function data() {
+    return {
+      propObserver: propObserver };
+
+  } };var _default =
+
+
+renderBiz;exports.default = _default;
+
+/***/ }),
+/* 141 */
+/*!************************************************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./mescroll-body.vue?vue&type=script&lang=js& */ 142);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+/* 142 */
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+var _mescrollTop = _interopRequireDefault(__webpack_require__(/*! ../mescroll-uni/components/mescroll-top.vue */ 143));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+{
+  name: "mescroll-body", props: ["down", "up", "i18n", "top", "topbar", "bottom", "safearea", "height", "bottombar", "sticky"],
+  data: function data() {
+    return {
+      wxsProps: {} };
+
+  },
+  components: {
+    'MescrollTop': _mescrollTop.default } };exports.default = _default;
+
+/***/ }),
+/* 143 */
+/*!********************************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/components/mescroll-top.vue ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _mescroll_top_vue_vue_type_template_id_3b2dc468_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mescroll-top.vue?vue&type=template&id=3b2dc468&scoped=true& */ 144);
+/* harmony import */ var _mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mescroll-top.vue?vue&type=script&lang=js& */ 146);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _mescroll_top_vue_vue_type_style_index_0_id_3b2dc468_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mescroll-top.vue?vue&type=style&index=0&id=3b2dc468&scoped=true&lang=css& */ 148);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 13);
+
+var renderjs
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _mescroll_top_vue_vue_type_template_id_3b2dc468_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _mescroll_top_vue_vue_type_template_id_3b2dc468_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "3b2dc468",
+  null,
+  false,
+  _mescroll_top_vue_vue_type_template_id_3b2dc468_scoped_true___WEBPACK_IMPORTED_MODULE_0__["components"],
+  renderjs
+)
+
+component.options.__file = "components/mescroll-uni/components/mescroll-uni/components/mescroll-top.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+/* 144 */
+/*!***************************************************************************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/components/mescroll-top.vue?vue&type=template&id=3b2dc468&scoped=true& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns, recyclableRender, components */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_template_id_3b2dc468_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./mescroll-top.vue?vue&type=template&id=3b2dc468&scoped=true& */ 145);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_template_id_3b2dc468_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_template_id_3b2dc468_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_template_id_3b2dc468_scoped_true___WEBPACK_IMPORTED_MODULE_0__["recyclableRender"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "components", function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_filter_modules_template_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_template_id_3b2dc468_scoped_true___WEBPACK_IMPORTED_MODULE_0__["components"]; });
+
+
+
+/***/ }),
+/* 145 */
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/filter-modules-template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/components/mescroll-top.vue?vue&type=template&id=3b2dc468&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns, recyclableRender, components */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
+var components
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._$g(0, "i")
+    ? _c("v-uni-image", {
+        staticClass: _vm._$g(0, "sc"),
+        class: _vm._$g(0, "c"),
+        style: _vm._$g(0, "s"),
+        attrs: { src: _vm._$g(0, "a-src"), mode: "widthFix", _i: 0 },
+        on: {
+          click: function($event) {
+            return _vm.$handleViewEvent($event)
+          }
+        }
+      })
+    : _vm._e()
+}
+var recyclableRender = false
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+/* 146 */
+/*!*********************************************************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/components/mescroll-top.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./mescroll-top.vue?vue&type=script&lang=js& */ 147);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_script_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_using_components_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+/* 147 */
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/using-components.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/components/mescroll-top.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+
+{
+  props: ["option", "value"],
+  data: function data() {
+    return {
+      wxsProps: {} };
+
+  },
+  components: {} };exports.default = _default;
+
+/***/ }),
+/* 148 */
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/components/mescroll-top.vue?vue&type=style&index=0&id=3b2dc468&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_style_index_0_id_3b2dc468_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/app-vue-style-loader??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./mescroll-top.vue?vue&type=style&index=0&id=3b2dc468&scoped=true&lang=css& */ 149);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_style_index_0_id_3b2dc468_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_style_index_0_id_3b2dc468_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_style_index_0_id_3b2dc468_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_style_index_0_id_3b2dc468_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_top_vue_vue_type_style_index_0_id_3b2dc468_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+/* 149 */
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/app-vue-style-loader??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/components/mescroll-top.vue?vue&type=style&index=0&id=3b2dc468&scoped=true&lang=css& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./mescroll-top.vue?vue&type=style&index=0&id=3b2dc468&scoped=true&lang=css& */ 150);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/app-vue-style-loader/lib/addStylesClient.js */ 20).default
+var update = add("a9f7d996", content, false, {"sourceMap":false,"shadowMode":false});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 150 */
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/components/mescroll-top.vue?vue&type=style&index=0&id=3b2dc468&scoped=true&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 19);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n/* 回到顶部的按钮 */\n.mescroll-totop[data-v-3b2dc468] {\r\n\tz-index: 9990;\r\n\tposition: fixed !important; /* 加上important避免编译到H5,在多mescroll中定位失效 */\r\n\tright: 20rpx;\r\n\tbottom: 120rpx;\r\n\twidth: 72rpx;\r\n\theight: auto;\r\n\tborder-radius: 50%;\r\n\topacity: 0;\r\n\ttransition: opacity 0.5s; /* 过渡 */\r\n\tmargin-bottom: var(--window-bottom); /* css变量 */\n}\r\n/* 适配 iPhoneX */\n@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) {\n.mescroll-totop-safearea[data-v-3b2dc468] {\r\n\t\tmargin-bottom: calc(var(--window-bottom) + constant(safe-area-inset-bottom)); /* window-bottom + 适配 iPhoneX */\r\n\t\tmargin-bottom: calc(var(--window-bottom) + env(safe-area-inset-bottom));\n}\n}\r\n/* 显示 -- 淡入 */\n.mescroll-totop-in[data-v-3b2dc468] {\r\n\topacity: 1;\n}\r\n/* 隐藏 -- 淡出且不接收事件*/\n.mescroll-totop-out[data-v-3b2dc468] {\r\n\topacity: 0;\r\n\tpointer-events: none;\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 151 */
+/*!********************************************************************************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue?vue&type=style&index=0&id=4a84bd48&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_style_index_0_id_4a84bd48_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/app-vue-style-loader??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./mescroll-body.vue?vue&type=style&index=0&id=4a84bd48&scoped=true&lang=css& */ 152);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_style_index_0_id_4a84bd48_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_style_index_0_id_4a84bd48_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_style_index_0_id_4a84bd48_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_style_index_0_id_4a84bd48_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_app_vue_style_loader_index_js_ref_6_oneOf_1_0_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_view_style_js_mescroll_body_vue_vue_type_style_index_0_id_4a84bd48_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+/* 152 */
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/app-vue-style-loader??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue?vue&type=style&index=0&id=4a84bd48&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!./mescroll-body.vue?vue&type=style&index=0&id=4a84bd48&scoped=true&lang=css& */ 153);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/app-vue-style-loader/lib/addStylesClient.js */ 20).default
+var update = add("1dd97f75", content, false, {"sourceMap":false,"shadowMode":false});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+/* 153 */
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/view/style.js!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-body/mescroll-body.vue?vue&type=style&index=0&id=4a84bd48&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 19);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".mescroll-body[data-v-4a84bd48] {\r\n\tposition: relative; /* 下拉刷新区域相对自身定位 */\r\n\theight: auto; /* 不可固定高度,否则overflow:hidden导致无法滑动; 同时使设置的最小高生效,实现列表不满屏仍可下拉*/\r\n\toverflow: hidden; /* 当有元素写在mescroll-body标签前面时,可遮住下拉刷新区域 */\r\n\tbox-sizing: border-box; /* 避免设置padding出现双滚动条的问题 */\n}\r\n\r\n/* 使sticky生效: 父元素不能overflow:hidden或者overflow:auto属性 */\n.mescroll-body.mescorll-sticky[data-v-4a84bd48]{\r\n\toverflow: unset !important\n}\r\n\r\n/* 适配 iPhoneX */\n@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) {\n.mescroll-safearea[data-v-4a84bd48] {\r\n\t\tpadding-bottom: constant(safe-area-inset-bottom);\r\n\t\tpadding-bottom: env(safe-area-inset-bottom);\n}\n}\r\n\r\n/* 下拉刷新区域 */\n.mescroll-downwarp[data-v-4a84bd48] {\r\n\tposition: absolute;\r\n\ttop: -100%;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\ttext-align: center;\n}\r\n\r\n/* 下拉刷新--内容区,定位于区域底部 */\n.mescroll-downwarp .downwarp-content[data-v-4a84bd48] {\r\n\tposition: absolute;\r\n\tleft: 0;\r\n\tbottom: 0;\r\n\twidth: 100%;\r\n\tmin-height: 60rpx;\r\n\tpadding: 20rpx 0;\r\n\ttext-align: center;\n}\r\n\r\n/* 下拉刷新--提示文本 */\n.mescroll-downwarp .downwarp-tip[data-v-4a84bd48] {\r\n\tdisplay: inline-block;\r\n\tfont-size: 28rpx;\r\n\tvertical-align: middle;\r\n\tmargin-left: 16rpx;\r\n\t/* color: gray; 已在style设置color,此处删去*/\n}\r\n\r\n/* 下拉刷新--旋转进度条 */\n.mescroll-downwarp .downwarp-progress[data-v-4a84bd48] {\r\n\tdisplay: inline-block;\r\n\twidth: 32rpx;\r\n\theight: 32rpx;\r\n\tborder-radius: 50%;\r\n\tborder: 2rpx solid gray;\r\n\tborder-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/\r\n\tvertical-align: middle;\n}\r\n\r\n/* 旋转动画 */\n.mescroll-downwarp .mescroll-rotate[data-v-4a84bd48] {\r\n\t-webkit-animation: mescrollDownRotate-data-v-4a84bd48 0.6s linear infinite;\r\n\t        animation: mescrollDownRotate-data-v-4a84bd48 0.6s linear infinite;\n}\n@-webkit-keyframes mescrollDownRotate-data-v-4a84bd48 {\n0% {\r\n\t\t-webkit-transform: rotate(0deg);\r\n\t\t        transform: rotate(0deg);\n}\n100% {\r\n\t\t-webkit-transform: rotate(360deg);\r\n\t\t        transform: rotate(360deg);\n}\n}\n@keyframes mescrollDownRotate-data-v-4a84bd48 {\n0% {\r\n\t\t-webkit-transform: rotate(0deg);\r\n\t\t        transform: rotate(0deg);\n}\n100% {\r\n\t\t-webkit-transform: rotate(360deg);\r\n\t\t        transform: rotate(360deg);\n}\n}\r\n\r\n/* 上拉加载区域 */\n.mescroll-upwarp[data-v-4a84bd48] {\r\n\tbox-sizing: border-box;\r\n\tmin-height: 110rpx;\r\n\tpadding: 30rpx 0;\r\n\ttext-align: center;\r\n\tclear: both;\n}\r\n\r\n/*提示文本 */\n.mescroll-upwarp .upwarp-tip[data-v-4a84bd48],\r\n.mescroll-upwarp .upwarp-nodata[data-v-4a84bd48] {\r\n\tdisplay: inline-block;\r\n\tfont-size: 28rpx;\r\n\tvertical-align: middle;\r\n\t/* color: gray; 已在style设置color,此处删去*/\n}\n.mescroll-upwarp .upwarp-tip[data-v-4a84bd48] {\r\n\tmargin-left: 16rpx;\n}\r\n\r\n/*旋转进度条 */\n.mescroll-upwarp .upwarp-progress[data-v-4a84bd48] {\r\n\tdisplay: inline-block;\r\n\twidth: 32rpx;\r\n\theight: 32rpx;\r\n\tborder-radius: 50%;\r\n\tborder: 2rpx solid gray;\r\n\tborder-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/\r\n\tvertical-align: middle;\n}\r\n\r\n/* 旋转动画 */\n.mescroll-upwarp .mescroll-rotate[data-v-4a84bd48] {\r\n\t-webkit-animation: mescrollUpRotate-data-v-4a84bd48 0.6s linear infinite;\r\n\t        animation: mescrollUpRotate-data-v-4a84bd48 0.6s linear infinite;\n}\n@-webkit-keyframes mescrollUpRotate-data-v-4a84bd48 {\n0% {\r\n\t\t-webkit-transform: rotate(0deg);\r\n\t\t        transform: rotate(0deg);\n}\n100% {\r\n\t\t-webkit-transform: rotate(360deg);\r\n\t\t        transform: rotate(360deg);\n}\n}\n@keyframes mescrollUpRotate-data-v-4a84bd48 {\n0% {\r\n\t\t-webkit-transform: rotate(0deg);\r\n\t\t        transform: rotate(0deg);\n}\n100% {\r\n\t\t-webkit-transform: rotate(360deg);\r\n\t\t        transform: rotate(360deg);\n}\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+/* 154 */
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/wxs/wxs.wxs?vue&type=custom&index=0&blockType=script&issuerPath=F%3A%5Cvue_project%5Cuni-app%5Cchar%5Cchat%5Ccomponents%5Cmescroll-uni%5Ccomponents%5Cmescroll-body%5Cmescroll-body.vue&module=wxsBiz&lang=wxs ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_wxs_wxs_vue_type_custom_index_0_blockType_script_issuerPath_F_3A_5Cvue_project_5Cuni_app_5Cchar_5Cchat_5Ccomponents_5Cmescroll_uni_5Ccomponents_5Cmescroll_body_5Cmescroll_body_vue_module_wxsBiz_lang_wxs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!./wxs.wxs?vue&type=custom&index=0&blockType=script&issuerPath=F%3A%5Cvue_project%5Cuni-app%5Cchar%5Cchat%5Ccomponents%5Cmescroll-uni%5Ccomponents%5Cmescroll-body%5Cmescroll-body.vue&module=wxsBiz&lang=wxs */ 155);
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_E_HBuilderX_3_4_7_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_filter_loader_index_js_wxs_wxs_vue_type_custom_index_0_blockType_script_issuerPath_F_3A_5Cvue_project_5Cuni_app_5Cchar_5Cchat_5Ccomponents_5Cmescroll_uni_5Ccomponents_5Cmescroll_body_5Cmescroll_body_vue_module_wxsBiz_lang_wxs__WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+/* 155 */
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-filter-loader!F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/wxs/wxs.wxs?vue&type=custom&index=0&blockType=script&issuerPath=F%3A%5Cvue_project%5Cuni-app%5Cchar%5Cchat%5Ccomponents%5Cmescroll-uni%5Ccomponents%5Cmescroll-body%5Cmescroll-body.vue&module=wxsBiz&lang=wxs ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (Component) {
+       (Component.options.wxs||(Component.options.wxs={}))['wxsBiz'] = (function(module){
+       // 使用wxs处理交互动画, 提高性能, 同时避免小程序bounce对下拉刷新的影响
+// https://uniapp.dcloud.io/frame?id=wxs
+// https://developers.weixin.qq.com/miniprogram/dev/framework/view/interactive-animation.html 
+
+// 模拟mescroll实例, 与mescroll.js的写法尽量保持一致
+var me = {}
+
+// ------ 自定义下拉刷新动画 start ------
+
+/* 下拉过程中的回调,滑动过程一直在执行 (rate<1为inOffset; rate>1为outOffset) */
+me.onMoving = function (ins, rate, downHight){
+	ins.requestAnimationFrame(function () {
+		ins.selectComponent('.mescroll-wxs-content').setStyle({
+			'will-change': 'transform', // 可解决下拉过程中, image和swiper脱离文档流的问题
+			'transform': 'translateY(' + downHight + 'px)',
+			'transition': ''
+		})
+		// 环形进度条
+		var progress = ins.selectComponent('.mescroll-wxs-progress')
+		progress && progress.setStyle({transform: 'rotate(' + 360 * rate + 'deg)'})
+	})
+}
+
+/* 显示下拉刷新进度 */
+me.showLoading = function (ins){
+	me.downHight = me.optDown.offset
+	ins.requestAnimationFrame(function () {
+		ins.selectComponent('.mescroll-wxs-content').setStyle({
+			'will-change': 'auto',
+			'transform': 'translateY(' + me.downHight + 'px)',
+			'transition': 'transform 300ms'
+		})
+	})
+}
+
+/* 结束下拉 */
+me.endDownScroll = function (ins){
+	me.downHight = 0;
+	me.isDownScrolling = false;
+	ins.requestAnimationFrame(function () {
+		ins.selectComponent('.mescroll-wxs-content').setStyle({
+			'will-change': 'auto',
+			'transform': 'translateY(0)', // 不可以写空串,否则scroll-view渲染不完整 (延时350ms会调clearTransform置空)
+			'transition': 'transform 300ms'
+		})
+	})
+}
+
+/* 结束下拉动画执行完毕后, 清除transform和transition, 避免对列表内容样式造成影响, 如: h5的list-msg示例下拉进度条漏出来等 */
+me.clearTransform = function (ins){
+	ins.requestAnimationFrame(function () {
+		ins.selectComponent('.mescroll-wxs-content').setStyle({
+			'will-change': '',
+			'transform': '',
+			'transition': ''
+		})
+	})
+}
+
+// ------ 自定义下拉刷新动画 end ------
+
+/**
+ * 监听逻辑层数据的变化 (实时更新数据)
+ */
+function propObserver(wxsProp) {
+	me.optDown = wxsProp.optDown
+	me.scrollTop = wxsProp.scrollTop
+	me.bodyHeight = wxsProp.bodyHeight
+	me.isDownScrolling = wxsProp.isDownScrolling
+	me.isUpScrolling = wxsProp.isUpScrolling
+	me.isUpBoth = wxsProp.isUpBoth
+	me.isScrollBody = wxsProp.isScrollBody
+	me.startTop = wxsProp.scrollTop // 及时更新touchstart触发的startTop, 避免scroll-view快速惯性滚动到顶部取值不准确
+}
+
+/**
+ * 监听逻辑层数据的变化 (调用wxs的方法)
+ */
+function callObserver(callProp, oldValue, ins) {
+	if (me.disabled()) return;
+	if(callProp.callType){
+		// 逻辑层（App Service）的style已失效,需在视图层（Webview）设置style
+		if(callProp.callType === 'showLoading'){
+			me.showLoading(ins)
+		}else if(callProp.callType === 'endDownScroll'){
+			me.endDownScroll(ins)
+		}else if(callProp.callType === 'clearTransform'){
+			me.clearTransform(ins)
+		}
+	}
+}
+
+/**
+ * touch事件
+ */
+function touchstartEvent(e, ins) {
+	me.downHight = 0; // 下拉的距离
+	me.startPoint = me.getPoint(e); // 记录起点
+	me.startTop = me.getScrollTop(); // 记录此时的滚动条位置
+	me.startAngle = 0; // 初始角度
+	me.lastPoint = me.startPoint; // 重置上次move的点
+	me.maxTouchmoveY = me.getBodyHeight() - me.optDown.bottomOffset; // 手指触摸的最大范围(写在touchstart避免body获取高度为0的情况)
+	me.inTouchend = false; // 标记不是touchend
+	
+	me.callMethod(ins, {type: 'setWxsProp'}) // 同步更新wxsProp的数据 (小程序是异步的,可能touchmove先执行,才到propObserver; h5和app是同步)
+}
+
+function touchmoveEvent(e, ins) {
+	var isPrevent = true // false表示不往上冒泡，相当于调用了同时调用了stopPropagation和preventDefault (对小程序生效, h5和app无效)
+	
+	if (me.disabled()) return isPrevent;
+	
+	var scrollTop = me.getScrollTop(); // 当前滚动条的距离
+	var curPoint = me.getPoint(e); // 当前点
+	
+	var moveY = curPoint.y - me.startPoint.y; // 和起点比,移动的距离,大于0向下拉,小于0向上拉
+	
+	// 向下拉 && 在顶部
+	// mescroll-body,直接判定在顶部即可
+	// scroll-view在滚动时不会触发touchmove,当触顶/底/左/右时,才会触发touchmove
+	// scroll-view滚动到顶部时,scrollTop不一定为0,也有可能大于0; 在iOS的APP中scrollTop可能为负数,不一定和startTop相等
+	if (moveY > 0 && (
+			(me.isScrollBody && scrollTop <= 0)
+			||
+			(!me.isScrollBody && (scrollTop <= 0 || (scrollTop <= me.optDown.startTop && scrollTop === me.startTop)) )
+		)) {
+		// 可下拉的条件
+		if (!me.inTouchend && !me.isDownScrolling && !me.optDown.isLock && (!me.isUpScrolling || (me.isUpScrolling &&
+				me.isUpBoth))) {
+	
+			// 下拉的角度是否在配置的范围内
+			if(!me.startAngle) me.startAngle = me.getAngle(me.lastPoint, curPoint); // 两点之间的角度,区间 [0,90]
+			if (me.startAngle < me.optDown.minAngle) return isPrevent; // 如果小于配置的角度,则不往下执行下拉刷新
+	
+			// 如果手指的位置超过配置的距离,则提前结束下拉,避免Webview嵌套导致touchend无法触发
+			if (me.maxTouchmoveY > 0 && curPoint.y >= me.maxTouchmoveY) {
+				me.inTouchend = true; // 标记执行touchend
+				touchendEvent(e, ins); // 提前触发touchend
+				return isPrevent;
+			}
+			
+			isPrevent = false // 小程序是return false
+	
+			var diff = curPoint.y - me.lastPoint.y; // 和上次比,移动的距离 (大于0向下,小于0向上)
+	
+			// 下拉距离  < 指定距离
+			if (me.downHight < me.optDown.offset) {
+				if (me.movetype !== 1) {
+					me.movetype = 1; // 加入标记,保证只执行一次
+					// me.optDown.inOffset && me.optDown.inOffset(me); // 进入指定距离范围内那一刻的回调,只执行一次
+					me.callMethod(ins, {type: 'setLoadType', downLoadType: 1})
+					me.isMoveDown = true; // 标记下拉区域高度改变,在touchend重置回来
+				}
+				me.downHight += diff * me.optDown.inOffsetRate; // 越往下,高度变化越小
+	
+				// 指定距离  <= 下拉距离
+			} else {
+				if (me.movetype !== 2) {
+					me.movetype = 2; // 加入标记,保证只执行一次
+					// me.optDown.outOffset && me.optDown.outOffset(me); // 下拉超过指定距离那一刻的回调,只执行一次
+					me.callMethod(ins, {type: 'setLoadType', downLoadType: 2})
+					me.isMoveDown = true; // 标记下拉区域高度改变,在touchend重置回来
+				}
+				if (diff > 0) { // 向下拉
+					me.downHight += diff * me.optDown.outOffsetRate; // 越往下,高度变化越小
+				} else { // 向上收
+					me.downHight += diff; // 向上收回高度,则向上滑多少收多少高度
+				}
+			}
+			
+			me.downHight = Math.round(me.downHight) // 取整
+			var rate = me.downHight / me.optDown.offset; // 下拉区域当前高度与指定距离的比值
+			// me.optDown.onMoving && me.optDown.onMoving(me, rate, me.downHight); // 下拉过程中的回调,一直在执行
+			me.onMoving(ins, rate, me.downHight)
+		}
+	}
+	
+	me.lastPoint = curPoint; // 记录本次移动的点
+	
+	return isPrevent // false表示不往上冒泡，相当于调用了同时调用了stopPropagation和preventDefault (对小程序生效, h5和app无效)
+}
+
+function touchendEvent(e, ins) {
+	// 如果下拉区域高度已改变,则需重置回来
+	if (me.isMoveDown) {
+		if (me.downHight >= me.optDown.offset) {
+			// 符合触发刷新的条件
+			me.downHight = me.optDown.offset; // 更新下拉区域高度
+			// me.triggerDownScroll();
+			me.callMethod(ins, {type: 'triggerDownScroll'})
+		} else {
+			// 不符合的话 则重置
+			me.downHight = 0;
+			// me.optDown.endDownScroll && me.optDown.endDownScroll(me);
+			me.callMethod(ins, {type: 'endDownScroll'})
+		}
+		me.movetype = 0;
+		me.isMoveDown = false;
+	} else if (!me.isScrollBody && me.getScrollTop() === me.startTop) { // scroll-view到顶/左/右/底的滑动事件
+		var isScrollUp = me.getPoint(e).y - me.startPoint.y < 0; // 和起点比,移动的距离,大于0向下拉,小于0向上拉
+		// 上滑
+		if (isScrollUp) {
+			// 需检查滑动的角度
+			var angle = me.getAngle(me.getPoint(e), me.startPoint); // 两点之间的角度,区间 [0,90]
+			if (angle > 80) {
+				// 检查并触发上拉
+				// me.triggerUpScroll(true);
+				me.callMethod(ins, {type: 'triggerUpScroll'})
+			}
+		}
+	}
+	me.callMethod(ins, {type: 'setWxsProp'}) // 同步更新wxsProp的数据 (小程序是异步的,可能touchmove先执行,才到propObserver; h5和app是同步)
+}
+
+/* 是否禁用下拉刷新 */
+me.disabled = function(){
+	return !me.optDown || !me.optDown.use || me.optDown.native
+}
+
+/* 根据点击滑动事件获取第一个手指的坐标 */
+me.getPoint = function(e) {
+	if (!e) {
+		return {x: 0,y: 0}
+	}
+	if (e.touches && e.touches[0]) {
+		return {x: e.touches[0].pageX,y: e.touches[0].pageY}
+	} else if (e.changedTouches && e.changedTouches[0]) {
+		return {x: e.changedTouches[0].pageX,y: e.changedTouches[0].pageY}
+	} else {
+		return {x: e.clientX,y: e.clientY}
+	}
+}
+
+/* 计算两点之间的角度: 区间 [0,90]*/
+me.getAngle = function (p1, p2) {
+	var x = Math.abs(p1.x - p2.x);
+	var y = Math.abs(p1.y - p2.y);
+	var z = Math.sqrt(x * x + y * y);
+	var angle = 0;
+	if (z !== 0) {
+		angle = Math.asin(y / z) / Math.PI * 180;
+	}
+	return angle
+}
+
+/* 获取滚动条的位置 */
+me.getScrollTop = function() {
+	return me.scrollTop || 0
+}
+
+/* 获取body的高度 */
+me.getBodyHeight = function() {
+	return me.bodyHeight || 0;
+}
+
+/* 调用逻辑层的方法 */
+me.callMethod = function(ins, param) {
+	if(ins) ins.callMethod('wxsCall', param)
+}
+
+/* 导出模块 */
+module.exports = {
+	propObserver: propObserver,
+	callObserver: callObserver,
+	touchstartEvent: touchstartEvent,
+	touchmoveEvent: touchmoveEvent,
+	touchendEvent: touchendEvent
+}
+       return module.exports
+       })({exports:{}});
+     });
+
+/***/ }),
+/* 156 */
+/*!********************************************************************************************************!*\
+  !*** F:/vue_project/uni-app/char/chat/components/mescroll-uni/components/mescroll-uni/mescroll-uni.js ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = MeScroll; /* mescroll
+                                                                                                        * version 1.3.7
+                                                                                                        * 2021-04-12 wenju
+                                                                                                        * https://www.mescroll.com
+                                                                                                        */
+
+function MeScroll(options, isScrollBody) {
+  var me = this;
+  me.version = '1.3.7'; // mescroll版本号
+  me.options = options || {}; // 配置
+  me.isScrollBody = isScrollBody || false; // 滚动区域是否为原生页面滚动; 默认为scroll-view
+
+  me.isDownScrolling = false; // 是否在执行下拉刷新的回调
+  me.isUpScrolling = false; // 是否在执行上拉加载的回调
+  var hasDownCallback = me.options.down && me.options.down.callback; // 是否配置了down的callback
+
+  // 初始化下拉刷新
+  me.initDownScroll();
+  // 初始化上拉加载,则初始化
+  me.initUpScroll();
+
+  // 自动加载
+  setTimeout(function () {// 待主线程执行完毕再执行,避免new MeScroll未初始化,在回调获取不到mescroll的实例
+    // 自动触发下拉刷新 (只有配置了down的callback才自动触发下拉刷新)
+    if ((me.optDown.use || me.optDown.native) && me.optDown.auto && hasDownCallback) {
+      if (me.optDown.autoShowLoading) {
+        me.triggerDownScroll(); // 显示下拉进度,执行下拉回调
+      } else {
+        me.optDown.callback && me.optDown.callback(me); // 不显示下拉进度,直接执行下拉回调
+      }
+    }
+    // 自动触发上拉加载
+    if (!me.isUpAutoLoad) {// 部分小程序(头条小程序)emit是异步, 会导致isUpAutoLoad判断有误, 先延时确保先执行down的callback,再执行up的callback
+      setTimeout(function () {
+        me.optUp.use && me.optUp.auto && !me.isUpAutoLoad && me.triggerUpScroll();
+      }, 100);
+    }
+  }, 30); // 需让me.optDown.inited和me.optUp.inited先执行
+}
+
+/* 配置参数:下拉刷新 */
+MeScroll.prototype.extendDownScroll = function (optDown) {
+  // 下拉刷新的配置
+  MeScroll.extend(optDown, {
+    use: true, // 是否启用下拉刷新; 默认true
+    auto: true, // 是否在初始化完毕之后自动执行下拉刷新的回调; 默认true
+    native: false, // 是否使用系统自带的下拉刷新; 默认false; 仅mescroll-body生效 (值为true时,还需在pages配置enablePullDownRefresh:true;详请参考mescroll-native的案例)
+    autoShowLoading: false, // 如果设置auto=true(在初始化完毕之后自动执行下拉刷新的回调),那么是否显示下拉刷新的进度; 默认false
+    isLock: false, // 是否锁定下拉刷新,默认false;
+    offset: 80, // 在列表顶部,下拉大于80px,松手即可触发下拉刷新的回调
+    startTop: 100, // scroll-view快速滚动到顶部时,此时的scroll-top可能大于0, 此值用于控制最大的误差
+    inOffsetRate: 1, // 在列表顶部,下拉的距离小于offset时,改变下拉区域高度比例;值小于1且越接近0,高度变化越小,表现为越往下越难拉
+    outOffsetRate: 0.2, // 在列表顶部,下拉的距离大于offset时,改变下拉区域高度比例;值小于1且越接近0,高度变化越小,表现为越往下越难拉
+    bottomOffset: 20, // 当手指touchmove位置在距离body底部20px范围内的时候结束上拉刷新,避免Webview嵌套导致touchend事件不执行
+    minAngle: 45, // 向下滑动最少偏移的角度,取值区间  [0,90];默认45度,即向下滑动的角度大于45度则触发下拉;而小于45度,将不触发下拉,避免与左右滑动的轮播等组件冲突;
+    textInOffset: '下拉刷新', // 下拉的距离在offset范围内的提示文本
+    textOutOffset: '释放更新', // 下拉的距离大于offset范围的提示文本
+    textLoading: '加载中 ...', // 加载中的提示文本
+    textSuccess: '加载成功', // 加载成功的文本
+    textErr: '加载失败', // 加载失败的文本
+    beforeEndDelay: 0, // 延时结束的时长 (显示加载成功/失败的时长, android小程序设置此项结束下拉会卡顿, 配置后请注意测试)
+    bgColor: "transparent", // 背景颜色 (建议在pages.json中再设置一下backgroundColorTop)
+    textColor: "gray", // 文本颜色 (当bgColor配置了颜色,而textColor未配置时,则textColor会默认为白色)
+    inited: null, // 下拉刷新初始化完毕的回调
+    inOffset: null, // 下拉的距离进入offset范围内那一刻的回调
+    outOffset: null, // 下拉的距离大于offset那一刻的回调
+    onMoving: null, // 下拉过程中的回调,滑动过程一直在执行; rate下拉区域当前高度与指定距离的比值(inOffset: rate<1; outOffset: rate>=1); downHight当前下拉区域的高度
+    beforeLoading: null, // 准备触发下拉刷新的回调: 如果return true,将不触发showLoading和callback回调; 常用来完全自定义下拉刷新, 参考案例【淘宝 v6.8.0】
+    showLoading: null, // 显示下拉刷新进度的回调
+    afterLoading: null, // 显示下拉刷新进度的回调之后,马上要执行的代码 (如: 在wxs中使用)
+    beforeEndDownScroll: null, // 准备结束下拉的回调. 返回结束下拉的延时执行时间,默认0ms; 常用于结束下拉之前再显示另外一小段动画,才去隐藏下拉刷新的场景, 参考案例【dotJump】
+    endDownScroll: null, // 结束下拉刷新的回调
+    afterEndDownScroll: null, // 结束下拉刷新的回调,马上要执行的代码 (如: 在wxs中使用)
+    callback: function callback(mescroll) {
+      // 下拉刷新的回调;默认重置上拉加载列表为第一页
+      mescroll.resetUpScroll();
+    } });
+
+};
+
+/* 配置参数:上拉加载 */
+MeScroll.prototype.extendUpScroll = function (optUp) {
+  // 上拉加载的配置
+  MeScroll.extend(optUp, {
+    use: true, // 是否启用上拉加载; 默认true
+    auto: true, // 是否在初始化完毕之后自动执行上拉加载的回调; 默认true
+    isLock: false, // 是否锁定上拉加载,默认false;
+    isBoth: true, // 上拉加载时,如果滑动到列表顶部是否可以同时触发下拉刷新;默认true,两者可同时触发;
+    callback: null, // 上拉加载的回调;function(page,mescroll){ }
+    page: {
+      num: 0, // 当前页码,默认0,回调之前会加1,即callback(page)会从1开始
+      size: 10, // 每页数据的数量
+      time: null // 加载第一页数据服务器返回的时间; 防止用户翻页时,后台新增了数据从而导致下一页数据重复;
+    },
+    noMoreSize: 5, // 如果列表已无数据,可设置列表的总数量要大于等于5条才显示无更多数据;避免列表数据过少(比如只有一条数据),显示无更多数据会不好看
+    offset: 150, // 距底部多远时,触发upCallback,仅mescroll-uni生效 ( mescroll-body配置的是pages.json的 onReachBottomDistance )
+    textLoading: '加载中 ...', // 加载中的提示文本
+    textNoMore: '-- END --', // 没有更多数据的提示文本
+    bgColor: "transparent", // 背景颜色 (建议在pages.json中再设置一下backgroundColorBottom)
+    textColor: "gray", // 文本颜色 (当bgColor配置了颜色,而textColor未配置时,则textColor会默认为白色)
+    inited: null, // 初始化完毕的回调
+    showLoading: null, // 显示加载中的回调
+    showNoMore: null, // 显示无更多数据的回调
+    hideUpScroll: null, // 隐藏上拉加载的回调
+    errDistance: 60, // endErr的时候需往上滑动一段距离,使其往下滑动时再次触发onReachBottom,仅mescroll-body生效
+    toTop: {
+      // 回到顶部按钮,需配置src才显示
+      src: null, // 图片路径,默认null (绝对路径或网络图)
+      offset: 1000, // 列表滚动多少距离才显示回到顶部按钮,默认1000
+      duration: 300, // 回到顶部的动画时长,默认300ms (当值为0或300则使用系统自带回到顶部,更流畅; 其他值则通过step模拟,部分机型可能不够流畅,所以非特殊情况不建议修改此项)
+      btnClick: null, // 点击按钮的回调
+      onShow: null, // 是否显示的回调
+      zIndex: 9990, // fixed定位z-index值
+      left: null, // 到左边的距离, 默认null. 此项有值时,right不生效. (支持20, "20rpx", "20px", "20%"格式的值, 其中纯数字则默认单位rpx)
+      right: 20, // 到右边的距离, 默认20 (支持20, "20rpx", "20px", "20%"格式的值, 其中纯数字则默认单位rpx)
+      bottom: 120, // 到底部的距离, 默认120 (支持20, "20rpx", "20px", "20%"格式的值, 其中纯数字则默认单位rpx)
+      safearea: false, // bottom的偏移量是否加上底部安全区的距离, 默认false, 需要适配iPhoneX时使用 (具体的界面如果不配置此项,则取本vue的safearea值)
+      width: 72, // 回到顶部图标的宽度, 默认72 (支持20, "20rpx", "20px", "20%"格式的值, 其中纯数字则默认单位rpx)
+      radius: "50%" // 圆角, 默认"50%" (支持20, "20rpx", "20px", "20%"格式的值, 其中纯数字则默认单位rpx)
+    },
+    empty: {
+      use: true, // 是否显示空布局
+      icon: null, // 图标路径
+      tip: '~ 暂无相关数据 ~', // 提示
+      btnText: '', // 按钮
+      btnClick: null, // 点击按钮的回调
+      onShow: null, // 是否显示的回调
+      fixed: false, // 是否使用fixed定位,默认false; 配置fixed为true,以下的top和zIndex才生效 (transform会使fixed失效,最终会降级为absolute)
+      top: "100rpx", // fixed定位的top值 (完整的单位值,如 "10%"; "100rpx")
+      zIndex: 99 // fixed定位z-index值
+    },
+    onScroll: false // 是否监听滚动事件
+  });
+};
+
+/* 配置参数 */
+MeScroll.extend = function (userOption, defaultOption) {
+  if (!userOption) return defaultOption;
+  for (var key in defaultOption) {
+    if (userOption[key] == null) {
+      var def = defaultOption[key];
+      if (def != null && typeof def === 'object') {
+        userOption[key] = MeScroll.extend({}, def); // 深度匹配
+      } else {
+        userOption[key] = def;
+      }
+    } else if (typeof userOption[key] === 'object') {
+      MeScroll.extend(userOption[key], defaultOption[key]); // 深度匹配
+    }
+  }
+  return userOption;
+};
+
+/* 简单判断是否配置了颜色 (非透明,非白色) */
+MeScroll.prototype.hasColor = function (color) {
+  if (!color) return false;
+  var c = color.toLowerCase();
+  return c != "#fff" && c != "#ffffff" && c != "transparent" && c != "white";
+};
+
+/* -------初始化下拉刷新------- */
+MeScroll.prototype.initDownScroll = function () {
+  var me = this;
+  // 配置参数
+  me.optDown = me.options.down || {};
+  if (!me.optDown.textColor && me.hasColor(me.optDown.bgColor)) me.optDown.textColor = "#fff"; // 当bgColor有值且textColor未设置,则textColor默认白色
+  me.extendDownScroll(me.optDown);
+
+  // 如果是mescroll-body且配置了native,则禁止自定义的下拉刷新
+  if (me.isScrollBody && me.optDown.native) {
+    me.optDown.use = false;
+  } else {
+    me.optDown.native = false; // 仅mescroll-body支持,mescroll-uni不支持
+  }
+
+  me.downHight = 0; // 下拉区域的高度
+
+  // 在页面中加入下拉布局
+  if (me.optDown.use && me.optDown.inited) {
+    // 初始化完毕的回调
+    setTimeout(function () {// 待主线程执行完毕再执行,避免new MeScroll未初始化,在回调获取不到mescroll的实例
+      me.optDown.inited(me);
+    }, 0);
+  }
+};
+
+/* 列表touchstart事件 */
+MeScroll.prototype.touchstartEvent = function (e) {
+  if (!this.optDown.use) return;
+
+  this.startPoint = this.getPoint(e); // 记录起点
+  this.startTop = this.getScrollTop(); // 记录此时的滚动条位置
+  this.startAngle = 0; // 初始角度
+  this.lastPoint = this.startPoint; // 重置上次move的点
+  this.maxTouchmoveY = this.getBodyHeight() - this.optDown.bottomOffset; // 手指触摸的最大范围(写在touchstart避免body获取高度为0的情况)
+  this.inTouchend = false; // 标记不是touchend
+};
+
+/* 列表touchmove事件 */
+MeScroll.prototype.touchmoveEvent = function (e) {
+  if (!this.optDown.use) return;
+  var me = this;
+
+  var scrollTop = me.getScrollTop(); // 当前滚动条的距离
+  var curPoint = me.getPoint(e); // 当前点
+
+  var moveY = curPoint.y - me.startPoint.y; // 和起点比,移动的距离,大于0向下拉,小于0向上拉
+
+  // 向下拉 && 在顶部
+  // mescroll-body,直接判定在顶部即可
+  // scroll-view在滚动时不会触发touchmove,当触顶/底/左/右时,才会触发touchmove
+  // scroll-view滚动到顶部时,scrollTop不一定为0,也有可能大于0; 在iOS的APP中scrollTop可能为负数,不一定和startTop相等
+  if (moveY > 0 && (
+  me.isScrollBody && scrollTop <= 0 ||
+
+  !me.isScrollBody && (scrollTop <= 0 || scrollTop <= me.optDown.startTop && scrollTop === me.startTop)))
+  {
+    // 可下拉的条件
+    if (!me.inTouchend && !me.isDownScrolling && !me.optDown.isLock && (!me.isUpScrolling || me.isUpScrolling &&
+    me.optUp.isBoth)) {
+
+      // 下拉的初始角度是否在配置的范围内
+      if (!me.startAngle) me.startAngle = me.getAngle(me.lastPoint, curPoint); // 两点之间的角度,区间 [0,90]
+      if (me.startAngle < me.optDown.minAngle) return; // 如果小于配置的角度,则不往下执行下拉刷新
+
+      // 如果手指的位置超过配置的距离,则提前结束下拉,避免Webview嵌套导致touchend无法触发
+      if (me.maxTouchmoveY > 0 && curPoint.y >= me.maxTouchmoveY) {
+        me.inTouchend = true; // 标记执行touchend
+        me.touchendEvent(); // 提前触发touchend
+        return;
+      }
+
+      me.preventDefault(e); // 阻止默认事件
+
+      var diff = curPoint.y - me.lastPoint.y; // 和上次比,移动的距离 (大于0向下,小于0向上)
+
+      // 下拉距离  < 指定距离
+      if (me.downHight < me.optDown.offset) {
+        if (me.movetype !== 1) {
+          me.movetype = 1; // 加入标记,保证只执行一次
+          me.isDownEndSuccess = null; // 重置是否加载成功的状态 (wxs执行的是wxs.wxs)
+          me.optDown.inOffset && me.optDown.inOffset(me); // 进入指定距离范围内那一刻的回调,只执行一次
+          me.isMoveDown = true; // 标记下拉区域高度改变,在touchend重置回来
+        }
+        me.downHight += diff * me.optDown.inOffsetRate; // 越往下,高度变化越小
+
+        // 指定距离  <= 下拉距离
+      } else {
+        if (me.movetype !== 2) {
+          me.movetype = 2; // 加入标记,保证只执行一次
+          me.optDown.outOffset && me.optDown.outOffset(me); // 下拉超过指定距离那一刻的回调,只执行一次
+          me.isMoveDown = true; // 标记下拉区域高度改变,在touchend重置回来
+        }
+        if (diff > 0) {// 向下拉
+          me.downHight += diff * me.optDown.outOffsetRate; // 越往下,高度变化越小
+        } else {// 向上收
+          me.downHight += diff; // 向上收回高度,则向上滑多少收多少高度
+        }
+      }
+
+      me.downHight = Math.round(me.downHight); // 取整
+      var rate = me.downHight / me.optDown.offset; // 下拉区域当前高度与指定距离的比值
+      me.optDown.onMoving && me.optDown.onMoving(me, rate, me.downHight); // 下拉过程中的回调,一直在执行
+    }
+  }
+
+  me.lastPoint = curPoint; // 记录本次移动的点
+};
+
+/* 列表touchend事件 */
+MeScroll.prototype.touchendEvent = function (e) {
+  if (!this.optDown.use) return;
+  // 如果下拉区域高度已改变,则需重置回来
+  if (this.isMoveDown) {
+    if (this.downHight >= this.optDown.offset) {
+      // 符合触发刷新的条件
+      this.triggerDownScroll();
+    } else {
+      // 不符合的话 则重置
+      this.downHight = 0;
+      this.endDownScrollCall(this);
+    }
+    this.movetype = 0;
+    this.isMoveDown = false;
+  } else if (!this.isScrollBody && this.getScrollTop() === this.startTop) {// scroll-view到顶/左/右/底的滑动事件
+    var isScrollUp = this.getPoint(e).y - this.startPoint.y < 0; // 和起点比,移动的距离,大于0向下拉,小于0向上拉
+    // 上滑
+    if (isScrollUp) {
+      // 需检查滑动的角度
+      var angle = this.getAngle(this.getPoint(e), this.startPoint); // 两点之间的角度,区间 [0,90]
+      if (angle > 80) {
+        // 检查并触发上拉
+        this.triggerUpScroll(true);
+      }
+    }
+  }
+};
+
+/* 根据点击滑动事件获取第一个手指的坐标 */
+MeScroll.prototype.getPoint = function (e) {
+  if (!e) {
+    return {
+      x: 0,
+      y: 0 };
+
+  }
+  if (e.touches && e.touches[0]) {
+    return {
+      x: e.touches[0].pageX,
+      y: e.touches[0].pageY };
+
+  } else if (e.changedTouches && e.changedTouches[0]) {
+    return {
+      x: e.changedTouches[0].pageX,
+      y: e.changedTouches[0].pageY };
+
+  } else {
+    return {
+      x: e.clientX,
+      y: e.clientY };
+
+  }
+};
+
+/* 计算两点之间的角度: 区间 [0,90]*/
+MeScroll.prototype.getAngle = function (p1, p2) {
+  var x = Math.abs(p1.x - p2.x);
+  var y = Math.abs(p1.y - p2.y);
+  var z = Math.sqrt(x * x + y * y);
+  var angle = 0;
+  if (z !== 0) {
+    angle = Math.asin(y / z) / Math.PI * 180;
+  }
+  return angle;
+};
+
+/* 触发下拉刷新 */
+MeScroll.prototype.triggerDownScroll = function () {
+  if (this.optDown.beforeLoading && this.optDown.beforeLoading(this)) {
+    //return true则处于完全自定义状态
+  } else {
+    this.showDownScroll(); // 下拉刷新中...
+    !this.optDown.native && this.optDown.callback && this.optDown.callback(this); // 执行回调,联网加载数据
+  }
+};
+
+/* 显示下拉进度布局 */
+MeScroll.prototype.showDownScroll = function () {
+  this.isDownScrolling = true; // 标记下拉中
+  if (this.optDown.native) {
+    uni.startPullDownRefresh(); // 系统自带的下拉刷新
+    this.showDownLoadingCall(0); // 仍触发showLoading,因为上拉加载用到
+  } else {
+    this.downHight = this.optDown.offset; // 更新下拉区域高度
+    this.showDownLoadingCall(this.downHight); // 下拉刷新中...
+  }
+};
+
+MeScroll.prototype.showDownLoadingCall = function (downHight) {
+  this.optDown.showLoading && this.optDown.showLoading(this, downHight); // 下拉刷新中...
+  this.optDown.afterLoading && this.optDown.afterLoading(this, downHight); // 下拉刷新中...触发之后马上要执行的代码
+};
+
+/* 显示系统自带的下拉刷新时需要处理的业务 */
+MeScroll.prototype.onPullDownRefresh = function () {
+  this.isDownScrolling = true; // 标记下拉中
+  this.showDownLoadingCall(0); // 仍触发showLoading,因为上拉加载用到
+  this.optDown.callback && this.optDown.callback(this); // 执行回调,联网加载数据
+};
+
+/* 结束下拉刷新 */
+MeScroll.prototype.endDownScroll = function () {
+  if (this.optDown.native) {// 结束原生下拉刷新
+    this.isDownScrolling = false;
+    this.endDownScrollCall(this);
+    uni.stopPullDownRefresh();
+    return;
+  }
+  var me = this;
+  // 结束下拉刷新的方法
+  var endScroll = function endScroll() {
+    me.downHight = 0;
+    me.isDownScrolling = false;
+    me.endDownScrollCall(me);
+    if (!me.isScrollBody) {
+      me.setScrollHeight(0); // scroll-view重置滚动区域,使数据不满屏时仍可检查触发翻页
+      me.scrollTo(0, 0); // scroll-view需重置滚动条到顶部,避免startTop大于0时,对下拉刷新的影响
+    }
+  };
+  // 结束下拉刷新时的回调
+  var delay = 0;
+  if (me.optDown.beforeEndDownScroll) {
+    delay = me.optDown.beforeEndDownScroll(me); // 结束下拉刷新的延时,单位ms
+    if (me.isDownEndSuccess == null) delay = 0; // 没有执行加载中,则不延时
+  }
+  if (typeof delay === 'number' && delay > 0) {
+    setTimeout(endScroll, delay);
+  } else {
+    endScroll();
+  }
+};
+
+MeScroll.prototype.endDownScrollCall = function () {
+  this.optDown.endDownScroll && this.optDown.endDownScroll(this);
+  this.optDown.afterEndDownScroll && this.optDown.afterEndDownScroll(this);
+};
+
+/* 锁定下拉刷新:isLock=ture,null锁定;isLock=false解锁 */
+MeScroll.prototype.lockDownScroll = function (isLock) {
+  if (isLock == null) isLock = true;
+  this.optDown.isLock = isLock;
+};
+
+/* 锁定上拉加载:isLock=ture,null锁定;isLock=false解锁 */
+MeScroll.prototype.lockUpScroll = function (isLock) {
+  if (isLock == null) isLock = true;
+  this.optUp.isLock = isLock;
+};
+
+/* -------初始化上拉加载------- */
+MeScroll.prototype.initUpScroll = function () {
+  var me = this;
+  // 配置参数
+  me.optUp = me.options.up || { use: false };
+  if (!me.optUp.textColor && me.hasColor(me.optUp.bgColor)) me.optUp.textColor = "#fff"; // 当bgColor有值且textColor未设置,则textColor默认白色
+  me.extendUpScroll(me.optUp);
+
+  if (me.optUp.use === false) return; // 配置不使用上拉加载时,则不初始化上拉布局
+  me.optUp.hasNext = true; // 如果使用上拉,则默认有下一页
+  me.startNum = me.optUp.page.num + 1; // 记录page开始的页码
+
+  // 初始化完毕的回调
+  if (me.optUp.inited) {
+    setTimeout(function () {// 待主线程执行完毕再执行,避免new MeScroll未初始化,在回调获取不到mescroll的实例
+      me.optUp.inited(me);
+    }, 0);
+  }
+};
+
+/*滚动到底部的事件 (仅mescroll-body生效)*/
+MeScroll.prototype.onReachBottom = function () {
+  if (this.isScrollBody && !this.isUpScrolling) {// 只能支持下拉刷新的时候同时可以触发上拉加载,否则滚动到底部就需要上滑一点才能触发onReachBottom
+    if (!this.optUp.isLock && this.optUp.hasNext) {
+      this.triggerUpScroll();
+    }
+  }
+};
+
+/*列表滚动事件 (仅mescroll-body生效)*/
+MeScroll.prototype.onPageScroll = function (e) {
+  if (!this.isScrollBody) return;
+
+  // 更新滚动条的位置 (主要用于判断下拉刷新时,滚动条是否在顶部)
+  this.setScrollTop(e.scrollTop);
+
+  // 顶部按钮的显示隐藏
+  if (e.scrollTop >= this.optUp.toTop.offset) {
+    this.showTopBtn();
+  } else {
+    this.hideTopBtn();
+  }
+};
+
+/*列表滚动事件*/
+MeScroll.prototype.scroll = function (e, onScroll) {
+  // 更新滚动条的位置
+  this.setScrollTop(e.scrollTop);
+  // 更新滚动内容高度
+  this.setScrollHeight(e.scrollHeight);
+
+  // 向上滑还是向下滑动
+  if (this.preScrollY == null) this.preScrollY = 0;
+  this.isScrollUp = e.scrollTop - this.preScrollY > 0;
+  this.preScrollY = e.scrollTop;
+
+  // 上滑 && 检查并触发上拉
+  this.isScrollUp && this.triggerUpScroll(true);
+
+  // 顶部按钮的显示隐藏
+  if (e.scrollTop >= this.optUp.toTop.offset) {
+    this.showTopBtn();
+  } else {
+    this.hideTopBtn();
+  }
+
+  // 滑动监听
+  this.optUp.onScroll && onScroll && onScroll();
+};
+
+/* 触发上拉加载 */
+MeScroll.prototype.triggerUpScroll = function (isCheck) {
+  if (!this.isUpScrolling && this.optUp.use && this.optUp.callback) {
+    // 是否校验在底部; 默认不校验
+    if (isCheck === true) {
+      var canUp = false;
+      // 还有下一页 && 没有锁定 && 不在下拉中
+      if (this.optUp.hasNext && !this.optUp.isLock && !this.isDownScrolling) {
+        if (this.getScrollBottom() <= this.optUp.offset) {// 到底部
+          canUp = true; // 标记可上拉
+        }
+      }
+      if (canUp === false) return;
+    }
+    this.showUpScroll(); // 上拉加载中...
+    this.optUp.page.num++; // 预先加一页,如果失败则减回
+    this.isUpAutoLoad = true; // 标记上拉已经自动执行过,避免初始化时多次触发上拉回调
+    this.num = this.optUp.page.num; // 把最新的页数赋值在mescroll上,避免对page的影响
+    this.size = this.optUp.page.size; // 把最新的页码赋值在mescroll上,避免对page的影响
+    this.time = this.optUp.page.time; // 把最新的页码赋值在mescroll上,避免对page的影响
+    this.optUp.callback(this); // 执行回调,联网加载数据
+  }
+};
+
+/* 显示上拉加载中 */
+MeScroll.prototype.showUpScroll = function () {
+  this.isUpScrolling = true; // 标记上拉加载中
+  this.optUp.showLoading && this.optUp.showLoading(this); // 回调
+};
+
+/* 显示上拉无更多数据 */
+MeScroll.prototype.showNoMore = function () {
+  this.optUp.hasNext = false; // 标记无更多数据
+  this.optUp.showNoMore && this.optUp.showNoMore(this); // 回调
+};
+
+/* 隐藏上拉区域**/
+MeScroll.prototype.hideUpScroll = function () {
+  this.optUp.hideUpScroll && this.optUp.hideUpScroll(this); // 回调
+};
+
+/* 结束上拉加载 */
+MeScroll.prototype.endUpScroll = function (isShowNoMore) {
+  if (isShowNoMore != null) {// isShowNoMore=null,不处理下拉状态,下拉刷新的时候调用
+    if (isShowNoMore) {
+      this.showNoMore(); // isShowNoMore=true,显示无更多数据
+    } else {
+      this.hideUpScroll(); // isShowNoMore=false,隐藏上拉加载
+    }
+  }
+  this.isUpScrolling = false; // 标记结束上拉加载
+};
+
+/* 重置上拉加载列表为第一页
+    *isShowLoading 是否显示进度布局;
+    * 1.默认null,不传参,则显示上拉加载的进度布局
+    * 2.传参true, 则显示下拉刷新的进度布局
+    * 3.传参false,则不显示上拉和下拉的进度 (常用于静默更新列表数据)
+    */
+MeScroll.prototype.resetUpScroll = function (isShowLoading) {
+  if (this.optUp && this.optUp.use) {
+    var page = this.optUp.page;
+    this.prePageNum = page.num; // 缓存重置前的页码,加载失败可退回
+    this.prePageTime = page.time; // 缓存重置前的时间,加载失败可退回
+    page.num = this.startNum; // 重置为第一页
+    page.time = null; // 重置时间为空
+    if (!this.isDownScrolling && isShowLoading !== false) {// 如果不是下拉刷新触发的resetUpScroll并且不配置列表静默更新,则显示进度;
+      if (isShowLoading == null) {
+        this.removeEmpty(); // 移除空布局
+        this.showUpScroll(); // 不传参,默认显示上拉加载的进度布局
+      } else {
+        this.showDownScroll(); // 传true,显示下拉刷新的进度布局,不清空列表
+      }
+    }
+    this.isUpAutoLoad = true; // 标记上拉已经自动执行过,避免初始化时多次触发上拉回调
+    this.num = page.num; // 把最新的页数赋值在mescroll上,避免对page的影响
+    this.size = page.size; // 把最新的页码赋值在mescroll上,避免对page的影响
+    this.time = page.time; // 把最新的页码赋值在mescroll上,避免对page的影响
+    this.optUp.callback && this.optUp.callback(this); // 执行上拉回调
+  }
+};
+
+/* 设置page.num的值 */
+MeScroll.prototype.setPageNum = function (num) {
+  this.optUp.page.num = num - 1;
+};
+
+/* 设置page.size的值 */
+MeScroll.prototype.setPageSize = function (size) {
+  this.optUp.page.size = size;
+};
+
+/* 联网回调成功,结束下拉刷新和上拉加载
+    * dataSize: 当前页的数据量(必传)
+    * totalPage: 总页数(必传)
+    * systime: 服务器时间 (可空)
+    */
+MeScroll.prototype.endByPage = function (dataSize, totalPage, systime) {
+  var hasNext;
+  if (this.optUp.use && totalPage != null) hasNext = this.optUp.page.num < totalPage; // 是否还有下一页
+  this.endSuccess(dataSize, hasNext, systime);
+};
+
+/* 联网回调成功,结束下拉刷新和上拉加载
+    * dataSize: 当前页的数据量(必传)
+    * totalSize: 列表所有数据总数量(必传)
+    * systime: 服务器时间 (可空)
+    */
+MeScroll.prototype.endBySize = function (dataSize, totalSize, systime) {
+  var hasNext;
+  if (this.optUp.use && totalSize != null) {
+    var loadSize = (this.optUp.page.num - 1) * this.optUp.page.size + dataSize; // 已加载的数据总数
+    hasNext = loadSize < totalSize; // 是否还有下一页
+  }
+  this.endSuccess(dataSize, hasNext, systime);
+};
+
+/* 联网回调成功,结束下拉刷新和上拉加载
+    * dataSize: 当前页的数据个数(不是所有页的数据总和),用于上拉加载判断是否还有下一页.如果不传,则会判断还有下一页
+    * hasNext: 是否还有下一页,布尔类型;用来解决这个小问题:比如列表共有20条数据,每页加载10条,共2页.如果只根据dataSize判断,则需翻到第三页才会知道无更多数据,如果传了hasNext,则翻到第二页即可显示无更多数据.
+    * systime: 服务器时间(可空);用来解决这个小问题:当准备翻下一页时,数据库新增了几条记录,此时翻下一页,前面的几条数据会和上一页的重复;这里传入了systime,那么upCallback的page.time就会有值,把page.time传给服务器,让后台过滤新加入的那几条记录
+    */
+MeScroll.prototype.endSuccess = function (dataSize, hasNext, systime) {
+  var me = this;
+  // 结束下拉刷新
+  if (me.isDownScrolling) {
+    me.isDownEndSuccess = true;
+    me.endDownScroll();
+  }
+
+  // 结束上拉加载
+  if (me.optUp.use) {
+    var isShowNoMore; // 是否已无更多数据
+    if (dataSize != null) {
+      var pageNum = me.optUp.page.num; // 当前页码
+      var pageSize = me.optUp.page.size; // 每页长度
+      // 如果是第一页
+      if (pageNum === 1) {
+        if (systime) me.optUp.page.time = systime; // 设置加载列表数据第一页的时间
+      }
+      if (dataSize < pageSize || hasNext === false) {
+        // 返回的数据不满一页时,则说明已无更多数据
+        me.optUp.hasNext = false;
+        if (dataSize === 0 && pageNum === 1) {
+          // 如果第一页无任何数据且配置了空布局
+          isShowNoMore = false;
+          me.showEmpty();
+        } else {
+          // 总列表数少于配置的数量,则不显示无更多数据
+          var allDataSize = (pageNum - 1) * pageSize + dataSize;
+          if (allDataSize < me.optUp.noMoreSize) {
+            isShowNoMore = false;
+          } else {
+            isShowNoMore = true;
+          }
+          me.removeEmpty(); // 移除空布局
+        }
+      } else {
+        // 还有下一页
+        isShowNoMore = false;
+        me.optUp.hasNext = true;
+        me.removeEmpty(); // 移除空布局
+      }
+    }
+
+    // 隐藏上拉
+    me.endUpScroll(isShowNoMore);
+  }
+};
+
+/* 回调失败,结束下拉刷新和上拉加载 */
+MeScroll.prototype.endErr = function (errDistance) {
+  // 结束下拉,回调失败重置回原来的页码和时间
+  if (this.isDownScrolling) {
+    this.isDownEndSuccess = false;
+    var page = this.optUp.page;
+    if (page && this.prePageNum) {
+      page.num = this.prePageNum;
+      page.time = this.prePageTime;
+    }
+    this.endDownScroll();
+  }
+  // 结束上拉,回调失败重置回原来的页码
+  if (this.isUpScrolling) {
+    this.optUp.page.num--;
+    this.endUpScroll(false);
+    // 如果是mescroll-body,则需往回滚一定距离
+    if (this.isScrollBody && errDistance !== 0) {// 不处理0
+      if (!errDistance) errDistance = this.optUp.errDistance; // 不传,则取默认
+      this.scrollTo(this.getScrollTop() - errDistance, 0); // 往上回滚的距离
+    }
+  }
+};
+
+/* 显示空布局 */
+MeScroll.prototype.showEmpty = function () {
+  this.optUp.empty.use && this.optUp.empty.onShow && this.optUp.empty.onShow(true);
+};
+
+/* 移除空布局 */
+MeScroll.prototype.removeEmpty = function () {
+  this.optUp.empty.use && this.optUp.empty.onShow && this.optUp.empty.onShow(false);
+};
+
+/* 显示回到顶部的按钮 */
+MeScroll.prototype.showTopBtn = function () {
+  if (!this.topBtnShow) {
+    this.topBtnShow = true;
+    this.optUp.toTop.onShow && this.optUp.toTop.onShow(true);
+  }
+};
+
+/* 隐藏回到顶部的按钮 */
+MeScroll.prototype.hideTopBtn = function () {
+  if (this.topBtnShow) {
+    this.topBtnShow = false;
+    this.optUp.toTop.onShow && this.optUp.toTop.onShow(false);
+  }
+};
+
+/* 获取滚动条的位置 */
+MeScroll.prototype.getScrollTop = function () {
+  return this.scrollTop || 0;
+};
+
+/* 记录滚动条的位置 */
+MeScroll.prototype.setScrollTop = function (y) {
+  this.scrollTop = y;
+};
+
+/* 滚动到指定位置 */
+MeScroll.prototype.scrollTo = function (y, t) {
+  this.myScrollTo && this.myScrollTo(y, t); // scrollview需自定义回到顶部方法
+};
+
+/* 自定义scrollTo */
+MeScroll.prototype.resetScrollTo = function (myScrollTo) {
+  this.myScrollTo = myScrollTo;
+};
+
+/* 滚动条到底部的距离 */
+MeScroll.prototype.getScrollBottom = function () {
+  return this.getScrollHeight() - this.getClientHeight() - this.getScrollTop();
+};
+
+/* 计步器
+    star: 开始值
+    end: 结束值
+    callback(step,timer): 回调step值,计步器timer,可自行通过window.clearInterval(timer)结束计步器;
+    t: 计步时长,传0则直接回调end值;不传则默认300ms
+    rate: 周期;不传则默认30ms计步一次
+    * */
+MeScroll.prototype.getStep = function (star, end, callback, t, rate) {
+  var diff = end - star; // 差值
+  if (t === 0 || diff === 0) {
+    callback && callback(end);
+    return;
+  }
+  t = t || 300; // 时长 300ms
+  rate = rate || 30; // 周期 30ms
+  var count = t / rate; // 次数
+  var step = diff / count; // 步长
+  var i = 0; // 计数
+  var timer = setInterval(function () {
+    if (i < count - 1) {
+      star += step;
+      callback && callback(star, timer);
+      i++;
+    } else {
+      callback && callback(end, timer); // 最后一次直接设置end,避免计算误差
+      clearInterval(timer);
+    }
+  }, rate);
+};
+
+/* 滚动容器的高度 */
+MeScroll.prototype.getClientHeight = function (isReal) {
+  var h = this.clientHeight || 0;
+  if (h === 0 && isReal !== true) {// 未获取到容器的高度,可临时取body的高度 (可能会有误差)
+    h = this.getBodyHeight();
+  }
+  return h;
+};
+MeScroll.prototype.setClientHeight = function (h) {
+  this.clientHeight = h;
+};
+
+/* 滚动内容的高度 */
+MeScroll.prototype.getScrollHeight = function () {
+  return this.scrollHeight || 0;
+};
+MeScroll.prototype.setScrollHeight = function (h) {
+  this.scrollHeight = h;
+};
+
+/* body的高度 */
+MeScroll.prototype.getBodyHeight = function () {
+  return this.bodyHeight || 0;
+};
+MeScroll.prototype.setBodyHeight = function (h) {
+  this.bodyHeight = h;
+};
+
+/* 阻止浏览器默认滚动事件 */
+MeScroll.prototype.preventDefault = function (e) {
+  // 小程序不支持e.preventDefault, 已在wxs中禁止
+  // app的bounce只能通过配置pages.json的style.app-plus.bounce为"none"来禁止, 或使用renderjs禁止
+  // cancelable:是否可以被禁用; defaultPrevented:是否已经被禁用
+  if (e && e.cancelable && !e.defaultPrevented) e.preventDefault();
+};
 
 /***/ })
 /******/ ]);

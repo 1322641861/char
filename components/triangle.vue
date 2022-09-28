@@ -32,9 +32,9 @@
 		position: relative;
 		.tri-view {
 			border-radius: 10rpx;
-			padding: 12rpx;
+			padding: 16rpx;
 			display: inline-block;
-			font-size: 26rpx;
+			font-size: 28rpx;
 			line-height: 40rpx;
 			word-break: break-word;
 		}
@@ -54,6 +54,7 @@
 		}
 		.right {
 			margin-right: 4rpx;
+			text-align: left;
 			&::after {
 				content: '';
 				width: 0;

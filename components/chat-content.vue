@@ -1,7 +1,7 @@
 <template>
 	<view>
-		<mescroll-body v-if="useScrollBody" class="msg-content" @init="mescrollInit" @down="downCallback" isBounce="true">
-			<view :style="{'height': topMargins}"></view>
+		<mescroll-body :topbar='true' v-if="useScrollBody" :top="topMargins" :bottom="bottomMargins" class="msg-content" @init="mescrollInit" @down="downCallback" isBounce="true">
+			<!-- <view :style="{'height': topMargins}"></view> -->
 			<view class="wrap" v-show="msgList.length" v-for="(item,i) in msgList" :key="'item' + i">
 				<view class="join-text" v-if="item && item.id === 3">
 					<view class="join-msg">{{item.joinMsg}}</view>
@@ -23,7 +23,7 @@
 					</view>
 				</view>
 			</view>
-			<view class="bottom-h-1" :style="{'height': bottomMargins}"></view>
+			<!-- <view class="bottom-h-1" :style="{'height': bottomMargins}"></view> -->
 		</mescroll-body>
 		<mescroll-uni class="msg-content custom-scroll" v-else :fixed="false" :style="{'height': height}" @init="mescrollInit" @down="downCallback" isBounce="true">
 			<view :style="{'height': topMargins}"></view>
@@ -136,13 +136,8 @@
 	}
 	.msg-content {
 		background-color: $uni-text-color-inverse;
-		// position: absolute;
-		// width: 100%;
-		// height: 100%;
-		// overflow-y: auto;
-		// height: calc(100vh - 85px);
 		.join-text {
-			font-size: 26rpx;
+			font-size: 27rpx;
 			text-align: center;
 
 			.join-msg {
@@ -152,7 +147,7 @@
 				padding: 3rpx 12rpx;
 				border-radius: 5rpx;
 				color: $uni-text-color-small;
-				font-size: 24rpx;
+				font-size: 27rpx;
 			}
 		}
 
@@ -187,7 +182,7 @@
 
 		.name,
 		.date {
-			font-size: 22rpx;
+			font-size: 24rpx;
 			color: $uni-text-color-grey;
 		}
 	}
